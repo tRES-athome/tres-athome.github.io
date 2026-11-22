@@ -12,7 +12,7 @@
 - [ ] **メンバー名簿**（3チーム分、表記は英語、学年/役職、担当）→ `people.yml` `rosters`
   - [ ] 他チームとの重複メンバーの扱い（会議方針：外部チームの正式メンバーは tRES の名簿に入れない）
   - [ ] 掲載の同意（氏名・写真）
-- [ ] **ロボットの写真**（G1、HSR 各1枚以上、英語の alt テキスト、撮影者クレジット）→ `robots.yml` `media`
+- [x] **ロボットの写真**（G1、HSR 各1枚。eR@sers サイトの写真を使用、2026-11-22 追加）→ `robots.yml` `media`
 - [ ] **ロボットの動画**（YouTube 推奨、英語または英語字幕）→ `robots.yml` `media`
 - [ ] **TDP 2027**（PDF または URL）→ `qualification.yml`（`status` を更新）
 - [ ] **クオリフィケーションビデオ 2027**（YouTube URL / ID）→ `qualification.yml`

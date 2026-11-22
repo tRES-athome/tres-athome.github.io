@@ -10,13 +10,15 @@ description: "The robots of tRES: Unitree G1 humanoid and Toyota HSR (Type B)."
   <div class="container">
     <div class="callout callout-note">
       <strong>Work in progress</strong>
-      <p>Photos and videos of our robots will be added here. Hardware details marked “to be confirmed” will be updated when the 2027 configuration is fixed.</p>
+      <p>Videos of our robots will be added here. Hardware details marked “to be confirmed” will be updated when the 2027 configuration is fixed.</p>
     </div>
 
     {% for r in site.data.robots %}
     <article class="robot" id="{{ r.id }}" aria-labelledby="{{ r.id }}-title" {% unless forloop.last %}style="margin-bottom:56px"{% endunless %}>
       <div>
         <div class="media-grid">
+          {% assign has_video = false %}
+          {% for m in r.media %}{% if m.type == "youtube" %}{% assign has_video = true %}{% endif %}{% endfor %}
           {% if r.media.size > 0 %}
             {% for m in r.media %}
               {% if m.type == "youtube" %}
@@ -26,18 +28,18 @@ description: "The robots of tRES: Unitree G1 humanoid and Toyota HSR (Type B)."
               </figure>
               {% else %}
               <figure class="media">
-                <img src="{{ m.src | relative_url }}" alt="{{ m.alt | escape }}" loading="lazy">
-                {% if m.credit %}<figcaption>{{ m.credit }}</figcaption>{% endif %}
+                <div class="media-photo"><img src="{{ m.src | relative_url }}" alt="{{ m.alt | escape }}" loading="lazy"></div>
+                {% if m.credit %}<figcaption>{% if m.credit_url %}<a href="{{ m.credit_url }}">{{ m.credit }}</a>{% else %}{{ m.credit }}{% endif %}</figcaption>{% endif %}
               </figure>
               {% endif %}
             {% endfor %}
+            {% unless has_video %}{% capture ph_video %}{{ r.name }} video{% endcapture %}{% include media-placeholder.html label=ph_video caption="Video coming soon." %}{% endunless %}
           {% else %}
             {% capture ph_photo %}{{ r.name }} photo{% endcapture %}{% capture ph_video %}{{ r.name }} video{% endcapture %}
             {% include media-placeholder.html label=ph_photo caption="Photo coming soon." %}
             {% include media-placeholder.html label=ph_video caption="Video coming soon." %}
           {% endif %}
         </div>
-        <p class="small muted">Until our own media is ready, see the robot on the <a href="{{ r.source }}">eR@sers robots page</a>.</p>
       </div>
       <div>
         <h2 id="{{ r.id }}-title">{{ r.name }}</h2>

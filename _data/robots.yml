@@ -26,7 +26,12 @@
     - "Restaurant-style serving tasks (demonstrated in 2026)"
   software: "https://github.com/trcp/g1_ws"
   source: "https://erasers.jp/robots/"
-  media: []
+  media:
+    - type: image
+      src: /assets/img/robots/g1.jpg
+      alt: "Unitree G1 humanoid robot standing upright in a laboratory, with a Tamagawa University label on its chest and white robotic hands"
+      credit: "Photo: eR@sers, Tamagawa University"
+      credit_url: "https://erasers.jp/robots/"
 
 - id: hsr
   name: "Toyota HSR (Type B)"
@@ -46,4 +51,9 @@
     - "Domestic service tasks (navigation, object handling, interaction) — exact task coverage for 2027 to be confirmed"
   software: ""
   source: "https://erasers.jp/robots/"
-  media: []
+  media:
+    - type: image
+      src: /assets/img/robots/hsr.jpg
+      alt: "Toyota HSR mobile manipulator: a white robot with a round black base, a single folded arm and a head with a display and cameras"
+      credit: "Photo: eR@sers, Tamagawa University"
+      credit_url: "https://erasers.jp/robots/"
