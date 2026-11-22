@@ -3,23 +3,19 @@
 # Set `url` to "" when the website is not confirmed yet — the site then shows
 # "Website: to be confirmed" instead of a link.
 
-- id: sobits
-  name: "SOBITS"
-  letter: "S"
-  color: sobits
-  affiliation: "Choi Laboratory and Hagiwara Laboratory, Graduate School of Science and Technology, Soka University (Tokyo, Japan)"
-  url: "https://teamsobits.github.io/"
-  github: "https://github.com/TeamSOBITS"
-  since: "Team formed in 2010 (Choi Laboratory established in 2000)"
+- id: ready
+  name: "Re@dy"
+  letter: "R"
+  color: ready
+  affiliation: "To be confirmed"
+  url: ""          # TODO: add Re@dy's official website once confirmed
+  github: ""
+  since: "To be confirmed"
   summary: >-
-    SOBITS develops life-support robots that "co-create" a more comfortable society with
-    people. The team designs its own robots (SOBIT EDU, SOBIT MINI, SOBIT PRO, SOBIT LIGHT
-    and SOBIT HOME) and has competed in RoboCup@Home Japan Open since 2011.
-  focus:
-    - "Life-support mobile manipulators built in-house"
-    - "Vision-Language-Action (VLA) models and world models"
-    - "Real-to-simulation reconstruction (Real2Sim2Real)"
-    - "Open-source ROS software"
+    Re@dy competed together with eR@sers at RoboCup 2026 Incheon, where the joint entry
+    "eR@sers & Re@dy" received the Best Humanoid Award. A full team profile will be added
+    after confirmation.
+  focus: []
 
 - id: erasers
   name: "eR@sers"
@@ -39,16 +35,20 @@
     - "Human-robot interaction and VR platforms (SIGVerse)"
     - "Organizing and simulation work for the RoboCup@Home community"
 
-- id: ready
-  name: "Re@dy"
-  letter: "R"
-  color: ready
-  affiliation: "To be confirmed"
-  url: ""          # TODO: add Re@dy's official website once confirmed
-  github: ""
-  since: "To be confirmed"
+- id: sobits
+  name: "SOBITS"
+  letter: "S"
+  color: sobits
+  affiliation: "Choi Laboratory and Hagiwara Laboratory, Graduate School of Science and Technology, Soka University (Tokyo, Japan)"
+  url: "https://teamsobits.github.io/"
+  github: "https://github.com/TeamSOBITS"
+  since: "Team formed in 2010 (Choi Laboratory established in 2000)"
   summary: >-
-    Re@dy competed together with eR@sers at RoboCup 2026 Incheon, where the joint entry
-    "eR@sers & Re@dy" received the Best Humanoid Award. A full team profile will be added
-    after confirmation.
-  focus: []
+    SOBITS develops life-support robots that "co-create" a more comfortable society with
+    people. The team designs its own robots (SOBIT EDU, SOBIT MINI, SOBIT PRO, SOBIT LIGHT
+    and SOBIT HOME) and has competed in RoboCup@Home Japan Open since 2011.
+  focus:
+    - "Life-support mobile manipulators built in-house"
+    - "Vision-Language-Action (VLA) models and world models"
+    - "Real-to-simulation reconstruction (Real2Sim2Real)"
+    - "Open-source ROS software"

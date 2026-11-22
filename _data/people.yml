@@ -29,15 +29,15 @@ contact:
 # Team members, grouped by team. Leave `members` empty until the roster is final.
 # Example: - { name: "Taro Yamada", position: "M1 student", role: "Navigation" }
 rosters:
-  - team: sobits
-    members: []
-    members_page: "https://teamsobits.github.io/member.html"
-  - team: erasers
-    members: []
-    members_page: "https://erasers.jp/members/"
   - team: ready
     members: []
     members_page: ""
+  - team: erasers
+    members: []
+    members_page: "https://erasers.jp/members/"
+  - team: sobits
+    members: []
+    members_page: "https://teamsobits.github.io/member.html"
 
 # Faculty named with their titles on the partner teams' public websites (for reference).
 faculty:

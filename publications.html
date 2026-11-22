@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 kicker: Publications
 lead: "Publications by the partner teams from the last five years. Each entry shows which team it comes from. Where available, titles link to the paper page or a downloadable PDF."
-description: "Publications of the tRES partner teams (SOBITS, eR@sers, Re@dy) from the last five years."
+description: "Publications of the tRES partner teams (Re@dy, eR@sers, SOBITS) from the last five years."
 ---
 {% assign since = site.publications_since %}
 {% assign pubs = site.data.publications | where_exp: "p", "p.year >= since" | sort: "year" | reverse %}

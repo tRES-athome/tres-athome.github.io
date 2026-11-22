@@ -3,10 +3,10 @@
 # Most content lives in _data/*.yml. See README.md for editing.
 # ---------------------------------------------------------------
 title: "tRES"
-tagline: "Joint RoboCup@Home team of SOBITS, eR@sers and Re@dy"
+tagline: "Joint RoboCup@Home team of Re@dy, eR@sers and SOBITS"
 description: >-
-  tRES is a joint RoboCup@Home team formed by three teams — SOBITS, eR@sers and
-  Re@dy — preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR.
+  tRES is a joint RoboCup@Home team formed by three teams — Re@dy, eR@sers and
+  SOBITS — preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR.
 url: "https://tres-athome.github.io"
 baseurl: ""
 lang: en

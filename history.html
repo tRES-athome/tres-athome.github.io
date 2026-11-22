@@ -4,7 +4,7 @@ title: RoboCup History & Awards
 permalink: /history/
 kicker: History & Awards
 lead: "Participation, rankings and awards in RoboCup, regional RoboCup tournaments and related competitions. Every entry shows the team that achieved it."
-description: "RoboCup@Home participation, rankings and awards of SOBITS, eR@sers and Re@dy, and of tRES."
+description: "RoboCup@Home participation, rankings and awards of Re@dy, eR@sers and SOBITS, and of tRES."
 ---
 {% assign entries = site.data.awards | sort: "date" | reverse %}
 {% assign groups = entries | group_by_exp: "a", "a.date | slice: 0, 4" %}

@@ -17,7 +17,7 @@
 - date: "2026-07"
   event: "RoboCup 2026 Incheon"
   scope: world
-  teams: [erasers, ready]
+  teams: [ready, erasers]
   entrant: "eR@sers & Re@dy"
   results:
     - "Best Humanoid Award, @Home League"
