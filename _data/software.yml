@@ -1,0 +1,106 @@
+# Open-source software for the RoboCup@Home community.
+# The CfP counts only DOCUMENTED, ACTIVE repositories. Before listing a repository, check:
+#   - it is public, has a README with install + usage instructions, and was updated recently
+#   - `docs` points to the README (or documentation site)
+#   - `readme_lang` says which languages the README is available in
+# `checked` = date someone last verified the entry (YYYY-MM-DD).
+
+- name: "SOBITS Gazebo Worlds"
+  team: sobits
+  repo: "https://github.com/TeamSOBITS/sobits_gazebo_worlds"
+  docs: "https://github.com/TeamSOBITS/sobits_gazebo_worlds#readme"
+  purpose: "Gazebo home-arena worlds with customizable furniture, random YCB object placement, simulated people and GPSR command support."
+  stack: "ROS 2 Jazzy · Gazebo · Ubuntu 24.04"
+  license: "BSD-3-Clause"
+  readme_lang: "English, Japanese"
+  checked: "2026-11-22"
+
+- name: "SOBIT LIGHT"
+  team: sobits
+  repo: "https://github.com/TeamSOBITS/sobit_light"
+  docs: "https://github.com/TeamSOBITS/sobit_light#readme"
+  purpose: "Open-source mobile manipulator based on the Kachaka base, with hardware and ROS software."
+  stack: "ROS 2"
+  license: "BSD-3-Clause"
+  readme_lang: "To be confirmed"
+  checked: "2026-11-22"
+
+- name: "SOBIT HOME"
+  team: sobits
+  repo: "https://github.com/TeamSOBITS/sobit_home"
+  docs: "https://github.com/TeamSOBITS/sobit_home#readme"
+  purpose: "Dual-arm mobile manipulator with a swerve-drive base and a height-adjustable torso; hardware model and ROS software."
+  stack: "ROS 2"
+  license: "BSD-3-Clause"
+  readme_lang: "To be confirmed"
+  checked: "2026-11-22"
+
+- name: "SOBITS VLA Tools"
+  team: sobits
+  repo: "https://github.com/TeamSOBITS/sobits_vla_tools"
+  docs: "https://github.com/TeamSOBITS/sobits_vla_tools#readme"
+  purpose: "Tools to collect robot data and run Vision-Language-Action (VLA) models on SOBITS robots over ROS (currently data collection)."
+  stack: "ROS 2 Humble · Python ≥ 3.10 · Ubuntu 22.04"
+  license: "BSD-3-Clause"
+  readme_lang: "Japanese, English"
+  checked: "2026-11-22"
+
+- name: "SOBITS Viz"
+  team: sobits
+  repo: "https://github.com/TeamSOBITS/sobits_viz"
+  docs: "https://github.com/TeamSOBITS/sobits_viz#readme"
+  purpose: "Shared visualization (Rerun, Foxglove, RViz2) for SOBITS robots from one robot description."
+  stack: "ROS 2"
+  license: "BSD-3-Clause"
+  readme_lang: "To be confirmed"
+  checked: "2026-11-22"
+
+- name: "erasers_kachaka"
+  team: erasers
+  repo: "https://github.com/trcp/erasers_kachaka"
+  docs: "https://github.com/trcp/erasers_kachaka#readme"
+  purpose: "Kachaka package (Gen. 2) for education — a starting point for beginners in robotics."
+  stack: "ROS 2"
+  license: "To be confirmed"
+  readme_lang: "To be confirmed"
+  checked: "2026-11-22"
+
+- name: "g1_ws"
+  team: erasers
+  repo: "https://github.com/trcp/g1_ws"
+  docs: "https://github.com/trcp/g1_ws#readme"
+  purpose: "Development workspace for the Unitree G1 humanoid (speech, localization and perception integration)."
+  stack: "ROS 2 Humble · Docker"
+  license: "To be confirmed"
+  readme_lang: "Japanese"
+  checked: "2026-11-22"
+
+- name: "Unitree G1 Amazing Hand Connector"
+  team: erasers
+  repo: "https://github.com/trcp/g1_amazing_hand_connector"
+  docs: "https://github.com/trcp/g1_amazing_hand_connector#readme"
+  purpose: "Connector for mounting the open-hardware Amazing Hand on the Unitree G1."
+  stack: "Hardware"
+  license: "To be confirmed"
+  readme_lang: "To be confirmed"
+  checked: "2026-11-22"
+
+- name: "SIGVerse"
+  team: erasers
+  repo: "https://github.com/sigverse"
+  docs: "https://github.com/sigverse"
+  purpose: "Cloud-based VR platform combining physics, perception and communication simulation for human-robot interaction research."
+  stack: "Unity · ROS"
+  license: "See each repository"
+  readme_lang: "To be confirmed"
+  checked: "2026-11-22"
+
+- name: "RoboCup@Home Simulation"
+  team: erasers
+  repo: "https://github.com/robocupathomesim"
+  docs: "https://github.com/RoboCupAtHomeSim/overview"
+  purpose: "Unity projects and ROS packages for RoboCup@Home simulation tasks (Handyman, Interactive Cleanup, Human Navigation)."
+  stack: "Unity · ROS / ROS 2"
+  license: "See each repository"
+  readme_lang: "To be confirmed"
+  checked: "2026-11-22"

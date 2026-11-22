@@ -1,0 +1,103 @@
+# Research themes of tRES.
+# status: "Candidate" = topic planned for 2027, results not yet published.
+#         "Ongoing"   = work with public evidence (code, papers) linked below.
+# Keep descriptions short and in plain English for a general audience.
+
+themes:
+  - id: concepts
+    title: "Place and person concept models"
+    team: sobits
+    status: "Candidate"
+    plain: >-
+      Helping a robot learn what places ("kitchen", "by the sofa") and people mean in a home,
+      so it can follow everyday instructions such as "bring this to the person in the living room".
+    approach: >-
+      Concept models that link what the robot sees, where it is and what people say, so that
+      words can be grounded in locations and people in a real home.
+    evidence: []          # add papers / repositories when available
+
+  - id: vla
+    title: "Fine-tuning Vision-Language-Action (VLA) models"
+    team: sobits
+    status: "Ongoing"
+    plain: >-
+      Teaching a robot new household skills from demonstrations, using AI models that turn
+      camera images and a text instruction directly into robot motions.
+    approach: >-
+      Collecting demonstration data on the team's own robots and fine-tuning VLA models for
+      household manipulation. The SOBIT-X project also explores world-action models that predict
+      the result of an action.
+    evidence:
+      - label: "SOBITS VLA Tools (data collection for VLA models)"
+        url: "https://github.com/TeamSOBITS/sobits_vla_tools"
+      - label: "SOBITS research areas (SOBIT-X)"
+        url: "https://teamsobits.github.io/about.html"
+
+  - id: real2sim
+    title: "Simulation reconstruction of real arenas"
+    team: sobits
+    status: "Ongoing"
+    plain: >-
+      Rebuilding a real competition arena inside a simulator, so teams can practise and test
+      their robots virtually before touching the real one.
+    approach: >-
+      Gazebo worlds with customizable furniture, random placement of everyday objects (YCB),
+      simulated people and support for GPSR-style commands. The SOBITS World Model project aims to
+      connect the real world and simulation (Real2Sim2Real). Conversion to other simulators
+      (e.g. Isaac Sim, MuJoCo) is under consideration.
+    evidence:
+      - label: "SOBITS Gazebo Worlds (open source)"
+        url: "https://github.com/TeamSOBITS/sobits_gazebo_worlds"
+      - label: "SOBITS research areas (SOBITS World Model)"
+        url: "https://teamsobits.github.io/about.html"
+
+  - id: humanoid
+    title: "Humanoid robots for domestic tasks"
+    team: erasers
+    status: "Ongoing"
+    plain: >-
+      Making a human-shaped robot useful in a home: walking among people, serving and
+      interacting naturally, with hands that are easy to repair.
+    approach: >-
+      Domestic task execution on the Unitree G1 with open-hardware hands (Amazing Hand by
+      Pollen Robotics). The G1 received the Best Humanoid Award at RoboCup 2026 Incheon
+      (entry "eR@sers & Re@dy").
+    evidence:
+      - label: "Unitree G1 development workspace"
+        url: "https://github.com/trcp/g1_ws"
+      - label: "Amazing Hand connector for Unitree G1"
+        url: "https://github.com/trcp/g1_amazing_hand_connector"
+      - label: "Erasers: Robots"
+        url: "https://erasers.jp/robots/"
+
+# Community contributions documented on the partner teams' websites.
+community:
+  - team: erasers
+    title: "SIGVerse — cloud-based VR platform"
+    text: >-
+      An open-source simulator that combines physics, perception and communication, used for
+      human-robot interaction research and the RoboCup@Home simulation competitions.
+    url: "https://github.com/sigverse"
+  - team: erasers
+    title: "RoboCup@Home simulation competition software"
+    text: "Unity projects and ROS packages for simulation tasks such as Handyman, Interactive Cleanup and Human Navigation."
+    url: "https://github.com/robocupathomesim"
+  - team: erasers
+    title: "League organization"
+    text: >-
+      Members of eR@sers have served on the RoboCup@Home Executive, Technical and Organizing
+      Committees, chaired RoboCup@Home Japan Open and the @Home Simulation League, and chaired
+      World Robot Summit partner robot challenges.
+    url: "https://erasers.jp/contributions/"
+  - team: sobits
+    title: "Open-source robots and ROS software"
+    text: >-
+      SOBITS publishes the hardware and software of its in-house robots (e.g. SOBIT LIGHT, an
+      accessible open mobile manipulator) and presented its open-source efforts at ROSCon JP 2024.
+    url: "https://github.com/TeamSOBITS"
+  - team: sobits
+    title: "Education and outreach"
+    text: >-
+      SOBITS members ran introductory seminars on AI robotics as part of RoboCup Japan Open
+      @Home activities (2021, 2022).
+    url: "https://teamsobits.github.io/publication.html"

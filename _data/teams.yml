@@ -1,0 +1,59 @@
+# The three teams that form tRES.
+# id is used in other data files (publications, awards, software) as `team:`.
+# Set `url` to "" when the website is not confirmed yet — the site then shows
+# "Website: to be confirmed" instead of a link.
+
+- id: sobits
+  name: "SOBITS"
+  letter: "S"
+  color: sobits
+  affiliation: "Choi Laboratory and Hagiwara Laboratory, Graduate School of Science and Technology, Soka University (Tokyo, Japan)"
+  url: "https://teamsobits.github.io/"
+  github: "https://github.com/TeamSOBITS"
+  since: "Team formed in 2010 (Choi Laboratory established in 2000)"
+  summary: >-
+    SOBITS develops life-support robots that "co-create" a more comfortable society with
+    people. The team designs its own robots (SOBIT EDU, SOBIT MINI, SOBIT PRO, SOBIT LIGHT
+    and SOBIT HOME) and has competed in RoboCup@Home Japan Open since 2011.
+  focus:
+    - "Life-support mobile manipulators built in-house"
+    - "Vision-Language-Action (VLA) models and world models"
+    - "Real-to-simulation reconstruction (Real2Sim2Real)"
+    - "Open-source ROS software"
+  tres_role: "Scientific contributions: place and person concept models, VLA fine-tuning, and simulation reconstruction of real arenas (planned)."
+
+- id: erasers
+  name: "Erasers"
+  display: "eR@sers"
+  letter: "E"
+  color: erasers
+  affiliation: "Advanced Intelligence & Robotics Research Center (AIBot), Tamagawa University (Tokyo, Japan)"
+  url: "https://erasers.jp/"
+  github: "https://github.com/trcp"
+  since: "Formed around 2000 (RoboCup 4-legged league), later joined @Home"
+  summary: >-
+    eR@sers is a robotics laboratory and competition team at Tamagawa University. It won
+    RoboCup@Home in 2008 and 2010, and in 2026 entered @Home with a Unitree G1 humanoid for
+    the first time, together with READY.
+  focus:
+    - "Domestic service robots (Toyota HSR since 2016)"
+    - "Humanoid robots for home tasks (Unitree G1)"
+    - "Human-robot interaction and VR platforms (SIGVerse)"
+    - "Organizing and simulation work for the RoboCup@Home community"
+  tres_role: "Humanoid technology for the Unitree G1 (planned)."
+
+- id: ready
+  name: "READY"
+  display: "Re@dy"
+  letter: "R"
+  color: ready
+  affiliation: "To be confirmed"
+  url: ""          # TODO: add READY's official website once confirmed
+  github: ""
+  since: "To be confirmed"
+  summary: >-
+    READY competed together with eR@sers at RoboCup 2026 Incheon, where the joint entry
+    "eR@sers & Re@dy" received the Best Humanoid Award. A full team profile will be added
+    after confirmation.
+  focus: []
+  tres_role: "To be confirmed."

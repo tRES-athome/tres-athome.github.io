@@ -1,0 +1,55 @@
+# People of tRES.
+# Required by the CfP: Principal Investigator (with website link), Team Leader, Contact Person.
+# Do NOT publish personal e-mail addresses without the person's consent.
+# Fill in `name`, `affiliation`, `url` and set `confirmed: true` when final.
+
+roles:
+  - role: "Principal Investigator"
+    name: ""
+    affiliation: ""
+    url: ""            # link to the PI's research group / personal website (required)
+    confirmed: false
+  - role: "Team Leader"
+    name: ""
+    affiliation: ""
+    url: ""
+    confirmed: false
+  - role: "Contact Person"
+    name: ""
+    affiliation: ""
+    url: ""
+    confirmed: false
+
+# How to contact tRES (shown on the People page and in the footer).
+# Use a team address or contact form; avoid raw addresses (spam) — write e.g. "contact [at] example.org".
+contact:
+  method: ""           # e.g. "E-mail: tres [at] example.org"
+  confirmed: false
+
+# Team members, grouped by team. Leave `members` empty until the roster is final.
+# Example: - { name: "Taro Yamada", position: "M1 student", role: "Navigation" }
+rosters:
+  - team: sobits
+    members: []
+    members_page: "https://teamsobits.github.io/member.html"
+  - team: erasers
+    members: []
+    members_page: "https://erasers.jp/members/"
+  - team: ready
+    members: []
+    members_page: ""
+
+# Faculty named with their titles on the partner teams' public websites (for reference).
+faculty:
+  - name: "Yongwoon Choi"
+    title: "Professor"
+    team: sobits
+    affiliation: "Soka University"
+    url: ""
+    source: "https://teamsobits.github.io/member.html"
+  - name: "Yoshinobu Hagiwara"
+    title: "Associate Professor"
+    team: sobits
+    affiliation: "Soka University"
+    url: ""
+    source: "https://teamsobits.github.io/member.html"

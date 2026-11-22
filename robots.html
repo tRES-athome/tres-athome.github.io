@@ -1,0 +1,84 @@
+---
+layout: default
+title: Robots
+permalink: /robots/
+kicker: Robots
+lead: "tRES plans to compete with two robots: the Unitree G1 humanoid and the Toyota HSR (Type B). The configuration for 2027 is not final yet."
+description: "The robots of tRES: Unitree G1 humanoid and Toyota HSR (Type B)."
+---
+<section class="section">
+  <div class="container">
+    <div class="callout callout-note">
+      <strong>Work in progress</strong>
+      <p>Photos and videos of our robots will be added here. Hardware details marked “to be confirmed” will be updated when the 2027 configuration is fixed.</p>
+    </div>
+
+    {% for r in site.data.robots %}
+    <article class="robot" id="{{ r.id }}" aria-labelledby="{{ r.id }}-title" {% unless forloop.last %}style="margin-bottom:56px"{% endunless %}>
+      <div>
+        <div class="media-grid">
+          {% if r.media.size > 0 %}
+            {% for m in r.media %}
+              {% if m.type == "youtube" %}
+              <figure class="media">
+                <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/{{ m.id }}" title="{{ m.title | escape }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                {% if m.credit %}<figcaption>{{ m.credit }}</figcaption>{% endif %}
+              </figure>
+              {% else %}
+              <figure class="media">
+                <img src="{{ m.src | relative_url }}" alt="{{ m.alt | escape }}" loading="lazy">
+                {% if m.credit %}<figcaption>{{ m.credit }}</figcaption>{% endif %}
+              </figure>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% capture ph_photo %}{{ r.name }} photo{% endcapture %}{% capture ph_video %}{{ r.name }} video{% endcapture %}
+            {% include media-placeholder.html label=ph_photo caption="Photo coming soon." %}
+            {% include media-placeholder.html label=ph_video caption="Video coming soon." %}
+          {% endif %}
+        </div>
+        <p class="small muted">Until our own media is ready, see the robot on the <a href="{{ r.source }}">Erasers robots page</a>.</p>
+      </div>
+      <div>
+        <h2 id="{{ r.id }}-title">{{ r.name }}</h2>
+        <p class="tags"><span class="badge">{{ r.status }}</span></p>
+        <dl class="facts">
+          <dt>Type</dt><dd>{{ r.kind }}</dd>
+          <dt>Manufacturer</dt><dd>{{ r.maker }}</dd>
+          <dt>Operated by</dt><dd>{% if r.operated_by == "To be confirmed" %}{% include tbc.html %}{% else %}{{ r.operated_by }}{% endif %}</dd>
+        </dl>
+        <p>{{ r.summary }}</p>
+        <h3>Hardware</h3>
+        <ul>{% for h in r.hardware %}<li>{{ h }}</li>{% endfor %}</ul>
+        <h3>Main functions</h3>
+        <ul>{% for f in r.functions %}<li>{{ f }}</li>{% endfor %}</ul>
+        <p class="small">
+          {% if r.software != "" %}<a href="{{ r.software }}">Software repository</a> · {% endif %}
+          <a href="{{ r.source }}">Source of this description</a>
+        </p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="other-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="other-title">Other robots in the partner labs</h2>
+      <p>The partner teams also develop and use other robots for research and education. These are not planned competition platforms for 2027.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card team-card team-sobits">
+        <h3>SOBITS robots</h3>
+        <p>In-house robots designed with 3D CAD and 3D printing: SOBIT EDU and SOBIT MINI (based on TurtleBot2), SOBIT PRO (four-wheel independent steering), SOBIT LIGHT (open-source mobile manipulator on a Kachaka base) and SOBIT HOME (dual-arm mobile manipulator).</p>
+        <div class="card-links"><a href="https://teamsobits.github.io/robot.html">SOBITS robots</a></div>
+      </div>
+      <div class="card team-card team-erasers">
+        <h3>Erasers robots</h3>
+        <p>Besides the HSR and G1: Kachaka (Preferred Robotics) as an education platform, two PiPER arms (AgileX) for dual-arm and VLA research, and a UR5e arm (Universal Robots) for tabletop tasks.</p>
+        <div class="card-links"><a href="https://erasers.jp/robots/">Erasers robots</a></div>
+      </div>
+    </div>
+  </div>
+</section>

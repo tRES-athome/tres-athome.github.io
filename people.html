@@ -1,0 +1,85 @@
+---
+layout: default
+title: People
+permalink: /people/
+kicker: People
+lead: "The members of tRES come from the three partner teams. The roles below are required by RoboCup@Home and will be filled in once they are confirmed."
+description: "Members of tRES, Principal Investigator, Team Leader and Contact Person."
+---
+{% assign P = site.data.people %}
+<section class="section">
+  <div class="container">
+    <h2>Key roles</h2>
+    <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">Principal Investigator, Team Leader and Contact Person of tRES</caption>
+        <thead><tr><th scope="col">Role</th><th scope="col">Name</th><th scope="col">Affiliation</th><th scope="col">Website</th></tr></thead>
+        <tbody>
+          {% for r in P.roles %}
+          <tr>
+            <th scope="row" style="text-transform:none;letter-spacing:0;font-size:1rem;color:var(--ink);background:none">{{ r.role }}</th>
+            {% if r.confirmed and r.name != "" %}
+            <td>{{ r.name }}</td>
+            <td>{{ r.affiliation }}</td>
+            <td>{% if r.url != "" %}<a href="{{ r.url }}">Website<span class="visually-hidden"> of {{ r.name }}</span></a>{% else %}—{% endif %}</td>
+            {% else %}
+            <td colspan="3">{% include tbc.html %}</td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="contact" style="margin-top:40px">Contact</h2>
+    {% if P.contact.confirmed and P.contact.method != "" %}
+    <p>{{ P.contact.method }}</p>
+    {% else %}
+    <p>{% include tbc.html %} A contact address for tRES will be published here. Until then, please use the contact information on the partner teams’ websites.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="members-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="members-title">Team members</h2>
+      <p>The tRES roster for 2027 is being finalized. Members are listed by home team.</p>
+    </div>
+    <div class="grid grid-3">
+      {% for g in P.rosters %}
+      {% assign tm = site.data.teams | where: "id", g.team | first %}
+      <article class="card team-card team-{{ tm.color }}">
+        <h3>{{ tm.name }}</h3>
+        <p class="card-meta">{% if tm.affiliation == "To be confirmed" %}Affiliation: {% include tbc.html %}{% else %}{{ tm.affiliation }}{% endif %}</p>
+        {% if g.members.size > 0 %}
+        <ul>{% for m in g.members %}<li><strong>{{ m.name }}</strong>{% if m.position %} — {{ m.position }}{% endif %}{% if m.role %} <span class="muted">({{ m.role }})</span>{% endif %}</li>{% endfor %}</ul>
+        {% else %}
+        <p>Members: {% include tbc.html %}</p>
+        {% endif %}
+        <div class="card-links">{% if g.members_page != "" %}<a href="{{ g.members_page }}">{{ tm.name }} member page</a>{% else %}<span>Member page: {% include tbc.html %}</span>{% endif %}</div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if P.faculty.size > 0 %}
+<section class="section" aria-labelledby="faculty-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="faculty-title">Faculty of the partner laboratories</h2>
+      <p>As listed on the partner teams’ websites. Roles within tRES are shown in the “Key roles” table above.</p>
+    </div>
+    <ul class="grid grid-3 plain-list">
+      {% for f in P.faculty %}
+      <li class="card">
+        <p class="tags">{% include team-tag.html id=f.team %}</p>
+        <h3 style="margin-top:.4em">{% if f.url != "" %}<a href="{{ f.url }}">{{ f.name }}</a>{% else %}{{ f.name }}{% endif %}</h3>
+        <p class="card-meta">{{ f.title }}, {{ f.affiliation }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

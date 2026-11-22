@@ -1,0 +1,50 @@
+---
+layout: default
+title: Qualification Materials
+permalink: /qualification/
+kicker: RoboCup@Home 2027
+lead: "Our Team Description Paper and qualification video for RoboCup@Home 2027 will be published here."
+description: "tRES qualification materials for RoboCup@Home 2027: Team Description Paper and qualification video."
+---
+{% assign Q = site.data.qualification %}
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      {% for q in Q.current %}
+      <article class="card" id="{{ q.id }}" aria-labelledby="{{ q.id }}-title">
+        <p class="tags"><span class="badge{% if q.status == 'In preparation' %} badge-tbc{% else %} badge-ok{% endif %}">{{ q.status }}</span></p>
+        <h2 id="{{ q.id }}-title" style="font-size:1.35rem;margin-top:.4em">{{ q.title }}</h2>
+        <p>{{ q.description }}</p>
+        {% if q.youtube_id and q.youtube_id != "" %}
+          <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/{{ q.youtube_id }}" title="{{ q.title | escape }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        {% elsif q.url == "" %}
+          {% capture ql %}{{ q.title }}{% endcapture %}
+          {% include media-placeholder.html label=ql caption="Coming soon — this item is in preparation." %}
+        {% endif %}
+        {% if q.url != "" %}<div class="card-links"><a href="{{ q.url }}">{% if q.pdf %}Download {{ q.title }} (PDF){% else %}Watch {{ q.title }}{% endif %}</a></div>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="past-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="past-title">Previous qualification materials of the partner teams</h2>
+      <p>Materials submitted by the individual teams in earlier years (not by tRES).</p>
+    </div>
+    <ul class="entry-list">
+      {% for p in Q.past %}
+      <li class="entry"><span class="tags">{% include team-tag.html id=p.team %}<a href="{{ p.url }}">{{ p.label }}</a></span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="cfp-title">
+  <div class="container">
+    <h2 id="cfp-title">RoboCup@Home 2027</h2>
+    <p>RoboCup@Home 2027 (Open Platform League) takes place from June 15 to June 21, 2027 in Nuremberg, Germany. See the official <a href="{{ site.cfp_url }}">Call for Participation</a> and <a href="https://athome.robocup.org/rules/submission-review-criteria/">submission and review criteria</a>.</p>
+  </div>
+</section>

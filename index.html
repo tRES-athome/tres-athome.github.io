@@ -1,0 +1,157 @@
+---
+layout: default
+title: About
+description: "tRES is a joint RoboCup@Home team formed by SOBITS, Erasers and READY, preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR."
+---
+{% assign sobits = site.data.teams | where: "id", "sobits" | first %}
+{% assign erasers = site.data.teams | where: "id", "erasers" | first %}
+{% assign ready = site.data.teams | where: "id", "ready" | first %}
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div>
+      {% include wordmark.html large=true %}
+      <h1 id="hero-title">Three RoboCup@Home teams.<br>One joint team.</h1>
+      <p>tRES brings together <strong>SOBITS</strong> (Soka University), <strong>Erasers</strong> (Tamagawa University) and <strong>READY</strong> to build service robots that help people at home. We are preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR.</p>
+      <p class="small">“Tres” means “three” in Spanish, and R, E and S stand for READY, Erasers and SOBITS.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ '/robots/' | relative_url }}">Meet the robots</a>
+        <a class="btn btn-ghost" href="{{ '/qualification/' | relative_url }}">Qualification materials</a>
+      </div>
+    </div>
+    <ul class="trio plain-list" aria-label="Teams in tRES">
+      <li class="trio-item r"><span class="trio-letter" aria-hidden="true">R</span><span><span class="trio-name">READY</span><br><span class="trio-aff">Affiliation to be confirmed</span></span></li>
+      <li class="trio-item e"><span class="trio-letter" aria-hidden="true">E</span><span><span class="trio-name">Erasers (eR@sers)</span><br><span class="trio-aff">Tamagawa University</span></span></li>
+      <li class="trio-item s"><span class="trio-letter" aria-hidden="true">S</span><span><span class="trio-name">SOBITS</span><br><span class="trio-aff">Soka University</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="status-strip">
+  <div class="container">
+    <ul>
+      <li><strong>Target:</strong> RoboCup@Home 2027 (Open Platform League)</li>
+      <li><strong>Event:</strong> June 15–21, 2027, Nuremberg, Germany</li>
+      <li><strong>Qualification materials:</strong> <span class="badge badge-tbc">In preparation</span></li>
+    </ul>
+  </div>
+</div>
+
+<section class="section" id="team" aria-labelledby="team-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Team</p>
+      <h2 id="team-title">Who we are</h2>
+      <p>tRES is a joint team of three RoboCup@Home teams from Japan. Each team keeps its own identity and website; under the tRES name we combine our robots, research and experience for RoboCup@Home 2027.</p>
+    </div>
+    <div class="grid grid-3">
+      {% for t in site.data.teams %}
+      <article class="card team-card team-{{ t.color }}" aria-labelledby="team-{{ t.id }}">
+        <span class="team-letter" aria-hidden="true">{{ t.letter }}</span>
+        <h3 id="team-{{ t.id }}">{{ t.name }}{% if t.display and t.display != t.name %} <span class="muted small">({{ t.display }})</span>{% endif %}</h3>
+        <p class="card-meta">{% if t.affiliation == "To be confirmed" %}Affiliation: {% include tbc.html %}{% else %}{{ t.affiliation }}{% endif %}</p>
+        <p>{{ t.summary }}</p>
+        {% if t.focus.size > 0 %}
+        <ul>{% for f in t.focus %}<li>{{ f }}</li>{% endfor %}</ul>
+        {% endif %}
+        <div class="role-box"><strong>Role in tRES</strong>{% if t.tres_role == "To be confirmed." %}{% include tbc.html %}{% else %}{{ t.tres_role }}{% endif %}</div>
+        <div class="card-links">
+          {% if t.url != "" %}<a href="{{ t.url }}">{{ t.name }} website<span class="visually-hidden"> (external)</span></a>{% else %}<span>Website: {% include tbc.html %}</span>{% endif %}
+          {% if t.github != "" %}<a href="{{ t.github }}">GitHub</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="mission" aria-labelledby="mission-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Purpose</p>
+      <h2 id="mission-title">Why a joint team?</h2>
+      <p>Homes are complex places: robots need to move safely, understand what people ask, find and handle everyday objects, and work alongside people. No single lab covers all of this. tRES combines complementary strengths so that each idea can be tested on real robots in a real competition.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card team-card team-erasers">
+        <h3>Humanoid robots at home</h3>
+        <p>Bringing a full-size humanoid (Unitree G1) into domestic tasks such as serving and interacting with people. <span class="muted">Led by Erasers.</span></p>
+      </div>
+      <div class="card team-card team-sobits">
+        <h3>Robots that understand homes</h3>
+        <p>Concept models of places and people, fine-tuned Vision-Language-Action models, and simulation copies of real arenas. <span class="muted">Led by SOBITS.</span></p>
+      </div>
+      <div class="card team-card team-tres">
+        <h3>Sharing with the community</h3>
+        <p>Open-source software, simulation tools and documentation that other @Home teams can reuse.</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:20px">Research topics for 2027 are candidates and may change. <a href="{{ '/research/' | relative_url }}">Read more about our research</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="highlights" aria-labelledby="highlights-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Track record</p>
+      <h2 id="highlights-title">Experience of the partner teams</h2>
+      <p>These results were achieved by the individual partner teams before tRES was formed. tRES has not competed yet.</p>
+    </div>
+    <div class="stats">
+      <div class="stat team-erasers">
+        <span class="stat-value">2× winner</span>
+        <span class="stat-label">RoboCup@Home world championship, 2008 and 2010</span>
+        {% include team-tag.html id="erasers" %}
+      </div>
+      <div class="stat team-erasers">
+        <span class="stat-value">Best Humanoid Award</span>
+        <span class="stat-label">RoboCup 2026 Incheon, @Home (entry “eR@sers &amp; Re@dy”)</span>
+        <span class="tags">{% include team-tag.html id="erasers" %}{% include team-tag.html id="ready" %}</span>
+      </div>
+      <div class="stat team-erasers">
+        <span class="stat-value">2nd place</span>
+        <span class="stat-label">RoboCup 2024 Eindhoven, @Home Domestic Standard Platform League</span>
+        {% include team-tag.html id="erasers" %}
+      </div>
+      <div class="stat team-sobits">
+        <span class="stat-value">4 wins in a row</span>
+        <span class="stat-label">RoboCup Japan Open @Home Open Platform League, 2021–2024 editions</span>
+        {% include team-tag.html id="sobits" %}
+      </div>
+    </div>
+    <p style="margin-top:20px"><a href="{{ '/history/' | relative_url }}">Full competition history and awards</a></p>
+  </div>
+</section>
+
+<section class="section section--alt" id="robots" aria-labelledby="robots-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Robots</p>
+      <h2 id="robots-title">Our robots for 2027</h2>
+      <p>The planned platforms are a humanoid and a mobile manipulator. The final configuration is still being decided.</p>
+    </div>
+    <div class="grid grid-2">
+      {% for r in site.data.robots %}
+      <article class="card">
+        <h3>{{ r.name }} <span class="badge">{{ r.status }}</span></h3>
+        <p class="card-meta">{{ r.kind }} · {{ r.maker }}</p>
+        <p>{{ r.summary }}</p>
+        <div class="card-links"><a href="{{ '/robots/' | relative_url }}#{{ r.id }}">More about {{ r.name }}</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="explore" aria-labelledby="explore-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="explore-title">Explore</h2>
+    </div>
+    <div class="grid grid-3">
+      <a class="card" href="{{ '/publications/' | relative_url }}"><h3>Publications</h3><p class="muted">Papers by the partner teams from the last five years.</p></a>
+      <a class="card" href="{{ '/software/' | relative_url }}"><h3>Open-source software</h3><p class="muted">Documented repositories that other teams can use.</p></a>
+      <a class="card" href="{{ '/people/' | relative_url }}"><h3>People &amp; contact</h3><p class="muted">Principal Investigator, Team Leader and Contact Person.</p></a>
+    </div>
+  </div>
+</section>

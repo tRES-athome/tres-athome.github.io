@@ -1,0 +1,52 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+kicker: Publications
+lead: "Publications by the partner teams from the last five years. Each entry shows which team it comes from. Where available, titles link to the paper page or a downloadable PDF."
+description: "Publications of the tRES partner teams (SOBITS, Erasers, READY) from the last five years."
+---
+{% assign since = site.publications_since %}
+{% assign pubs = site.data.publications | where_exp: "p", "p.year >= since" | sort: "year" | reverse %}
+{% assign years = pubs | map: "year" | uniq %}
+<section class="section">
+  <div class="container">
+    <div class="filters" data-filter-target="#pub-list" data-filter-key="team" role="group" aria-label="Filter publications by team">
+      <span class="filter-label">Team:</span>
+      <button type="button" class="filter-btn" data-value="all" aria-pressed="true">All</button>
+      {% for t in site.data.teams %}<button type="button" class="filter-btn" data-value="{{ t.id }}" aria-pressed="false">{{ t.name }}</button>{% endfor %}
+      <span class="visually-hidden" aria-live="polite" data-filter-status></span>
+    </div>
+
+    <div id="pub-list">
+      {% for y in years %}
+      <section class="year-group" aria-labelledby="y{{ y }}">
+        <h2 id="y{{ y }}">{{ y }}</h2>
+        <ol class="entry-list" reversed>
+          {% for p in pubs %}{% if p.year == y %}
+          <li class="entry" data-team="{{ p.team }}">
+            <p class="entry-title">{% if p.url != "" %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+            <p class="entry-sub">{{ p.authors }}<br><em>{{ p.venue }}</em>, {{ p.year }}.</p>
+            <p class="tags">
+              {% include team-tag.html id=p.team %}
+              <span class="badge">{% case p.type %}{% when "journal" %}Journal{% when "conference" %}Conference{% when "workshop" %}Workshop{% when "tdp" %}Team Description Paper{% when "talk" %}Talk / Presentation{% else %}{{ p.type }}{% endcase %}</span>
+              {% if p.pdf %}<a class="badge badge-ok" href="{{ p.url }}">PDF<span class="visually-hidden"> of {{ p.title }}</span></a>{% endif %}
+              {% if p.url == "" %}<span class="badge">Link to be added</span>{% endif %}
+              {% if p.note %}<span class="small muted">{{ p.note }}</span>{% endif %}
+            </p>
+          </li>
+          {% endif %}{% endfor %}
+        </ol>
+      </section>
+      {% endfor %}
+    </div>
+
+    <div class="callout">
+      <strong>Earlier publications</strong>
+      <p>Publications before {{ since }} are listed on the partner teams’ websites:
+        <a href="https://teamsobits.github.io/publication.html">SOBITS publications</a> ·
+        <a href="https://erasers.jp/publication/">Erasers publications</a>.
+        READY publications: <span class="badge badge-tbc">To be confirmed</span></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      {% include wordmark.html %}
+      <p class="footer-text">Joint RoboCup@Home team of
+        {% for t in site.data.teams %}{% if t.url != "" %}<a href="{{ t.url }}">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}.
+      </p>
+      <p class="footer-text small">Achievements listed on this site belong to the team named with each entry. tRES itself has not competed yet.</p>
+    </div>
+    <div>
+      <h2 class="footer-head">Contact</h2>
+      {% assign c = site.data.people.contact %}
+      <p class="footer-text">{% if c.confirmed and c.method != "" %}{{ c.method }}{% else %}Contact details: <span class="badge badge-tbc">To be confirmed</span>{% endif %}</p>
+      <p class="footer-text"><a href="{{ '/people/' | relative_url }}">People &amp; contact</a></p>
+    </div>
+    <div>
+      <h2 class="footer-head">Links</h2>
+      <ul class="plain-list footer-text">
+        <li><a href="{{ site.athome_url }}">RoboCup@Home</a></li>
+        <li><a href="{{ site.cfp_url }}">Call for Participation 2027</a></li>
+        <li><a href="{{ site.github_org_url }}">tRES on GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-meta small">
+    <p>Last updated: <time datetime="{{ site.last_updated }}">{{ site.last_updated | date: "%B %-d, %Y" }}</time></p>
+  </div>
+</footer>

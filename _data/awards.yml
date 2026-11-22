@@ -1,0 +1,429 @@
+# Competition history and awards.
+# IMPORTANT: every entry states WHICH TEAM achieved it. tRES itself has no results yet.
+#   teams:   list of team ids (sobits | erasers | ready | tres)
+#   entrant: team name as recorded at the event (e.g. a former joint-team name)
+#   scope:   world    = RoboCup world championship
+#            regional = RoboCup regional / national opens (Japan Open, Asia Pacific, ...)
+#            other    = other robotics competitions and academic awards
+#   date:    YYYY-MM (used for sorting; only the year is shown)
+#   year_label: optional text shown instead of the year (e.g. "2021–2023")
+#   verify:  optional — shown as a "To be confirmed" badge with this explanation
+#   source:  URL the entry was taken from
+
+# ---------------------------------------------------------------- tRES
+# (no entries yet — tRES competes for the first time in 2027)
+
+# ---------------------------------------------------------------- Erasers (and joint entries)
+- date: "2026-07"
+  event: "RoboCup 2026 Incheon"
+  scope: world
+  teams: [erasers, ready]
+  entrant: "eR@sers & Re@dy"
+  results:
+    - "Best Humanoid Award, @Home League"
+    - "8th of 24 teams, @Home League"
+  verify: "The award is also called the \"Humanoid Special Award\" in the announcement post; confirm the official name."
+  source: "https://erasers.jp/2026/07/06/results-of-robocup-2026-incheon/"
+
+- date: "2025-07"
+  event: "World Robot Summit 2025 — Future Convenience Store Challenge"
+  scope: other
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "Daily Winner, Stock & Disposal Task (July 15, 2025)"
+  source: "https://erasers.jp/awards/"
+
+- date: "2024-07"
+  event: "RoboCup 2024 Eindhoven"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place, @Home Domestic Standard Platform League"
+    - "Soul of the Party Award, @Home League"
+  source: "https://erasers.jp/awards/"
+
+- date: "2023-05"
+  event: "RoboCup Japan Open 2023"
+  scope: regional
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place, @Home Domestic Standard Platform League"
+    - "2nd place, @Home DSPL Technical Challenge"
+    - "2nd place, @Home Simulation Open Platform League"
+    - "2nd place, @Home Simulation OPL Technical Challenge"
+  source: "https://erasers.jp/awards/"
+
+- date: "2023-03"
+  event: "RoboCup Japan Open 2022 (decentralized event)"
+  scope: regional
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "3rd place, @Home Domestic Standard Platform League"
+    - "3rd place, @Home DSPL Technical Challenge"
+    - "2nd place, @Home Simulation Open Platform League (October 2022)"
+  source: "https://erasers.jp/awards/"
+
+- date: "2022-10"
+  event: "IROS 2022 Interactive Service Robot Competition in Cyberspace"
+  scope: other
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place"
+  source: "https://erasers.jp/awards/"
+
+- date: "2022-07"
+  event: "RoboCup 2022 Bangkok"
+  scope: world
+  teams: [erasers]
+  entrant: "Tama-Goya (joint team)"
+  results:
+    - "1st place, Smoothest, Safest Navigation Award, @Home Domestic Standard Platform League"
+  source: "https://erasers.jp/awards/"
+
+- date: "2023-07"
+  year_label: "2021–2023"
+  event: "RoboCup 2021, 2022 and 2023 (as a joint team)"
+  scope: world
+  teams: [erasers]
+  entrant: "Joint team including eR@sers"
+  results:
+    - "Ranked 4th place"
+    - "\"Smoothest, Safest Navigation\" Award (twice)"
+  verify: "The source gives a combined summary for 2021–2023. Confirm the year, league and team name for each result."
+  source: "https://erasers.jp/about/"
+
+- date: "2022-03"
+  event: "RoboCup Japan Open 2021"
+  scope: regional
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place, @Home Domestic Standard Platform League"
+    - "1st place, @Home Education"
+  source: "https://erasers.jp/awards/"
+
+- date: "2021-11"
+  event: "RoboCup Asia Pacific 2021"
+  scope: regional
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place, @Home Domestic Standard Platform League"
+    - "RSJ Award, @Home DSPL"
+    - "2nd place, @Home DSPL Technical Challenge"
+    - "2nd place, @Home DSPL Tidy Up Award"
+    - "3rd place, @Home Simulation DSPL"
+    - "3rd place, @Home Simulation Open Platform League"
+    - "1st place, @Home Simulation OPL Technical Challenge"
+    - "2nd place, @Home Education (on-site)"
+    - "3rd place, @Home Education Technical Challenge (on-site)"
+  source: "https://erasers.jp/awards/"
+
+- date: "2021-09"
+  event: "World Robot Summit 2020 — Partner Robot Challenge (Real Space)"
+  scope: other
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "RSJ Special Award, Service Robotics Category"
+  source: "https://erasers.jp/awards/"
+
+- date: "2021-07"
+  event: "RoboCup 2021 Online"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "1st place, @Home Education Open Platform — Open Category"
+    - "Best Education Award, @Home Education"
+  source: "https://erasers.jp/awards/"
+
+- date: "2018-06"
+  event: "RoboCup 2018 Montréal"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "3rd place, @Home Domestic Standard Platform League"
+  source: "https://erasers.jp/awards/"
+
+- date: "2018-10"
+  event: "World Robot Summit 2018"
+  scope: other
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "Finalist"
+  source: "https://erasers.jp/about/"
+
+- date: "2017-07"
+  event: "RoboCup 2017 Nagoya"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place, @Home Domestic Standard Platform League"
+    - "Open Source Software Award, @Home"
+  source: "https://erasers.jp/awards/"
+
+- date: "2016-07"
+  event: "RoboCup 2016 Leipzig"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "@Home Innovation Award (HSR)"
+  source: "https://erasers.jp/awards/"
+
+- date: "2012-06"
+  event: "RoboCup 2012"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place, @Home"
+  verify: "Listed on the Erasers About page but not on its Awards page."
+  source: "https://erasers.jp/about/"
+
+- date: "2010-06"
+  event: "RoboCup 2010 Singapore"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "1st place, @Home League"
+  source: "https://erasers.jp/awards/"
+
+- date: "2009-07"
+  event: "RoboCup 2009 Graz"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "2nd place, @Home League"
+  source: "https://erasers.jp/awards/"
+
+- date: "2008-07"
+  event: "RoboCup 2008 Suzhou"
+  scope: world
+  teams: [erasers]
+  entrant: "eR@sers"
+  results:
+    - "1st place, @Home League"
+  source: "https://erasers.jp/awards/"
+
+# ---------------------------------------------------------------- SOBITS
+- date: "2025-05"
+  event: "RoboCup Japan Open 2025 (Shiga)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "2nd place (runner-up), @Home Open Platform League"
+    - "1st place, @Home OPL Kachaka Challenge"
+    - "3rd place, @Home OPL Open Challenge"
+    - "Best Poster Award, @Home"
+    - "Winner, @Home Domestic Standard Platform Beginner's Challenge"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2024-11"
+  event: "3rd Intelligent Home Robotics Challenge"
+  scope: other
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "Best Hospitality Award"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2024-09"
+  event: "RoboCup Malaysia Open 2024"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "5th place, @Home Education League"
+    - "Best HRI (Human-Robot Interaction) Award, @Home Education League"
+    - "Best Presentation Award, @Home Education League"
+    - "Best Oral Presentation, @Home Symposium"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2024-05"
+  event: "RoboCup Japan Open 2024 (Shiga)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Open Platform League"
+    - "1st place, @Home Simulation Open Platform League"
+    - "4th place, @Home Education League"
+    - "5th place, @Home Domestic Standard Platform League (Special Award for Outstanding Effort)"
+  verify: "The league name for the 5th place differs between SOBITS pages (\"Domestic Service Platform League\" / \"Domestic Open Platform League\")."
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2023-07"
+  event: "RoboCup France Open 2023"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "First participation, @Home Open Platform League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2023-05"
+  event: "RoboCup Japan Open 2023"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Open Platform League"
+    - "1st place, @Home Simulation League"
+    - "3rd place, @Home Education League"
+    - "Participation, @Home Domestic Standard Platform League"
+  verify: "The SOBITS history page lists 2nd place (not 3rd) in the Education League."
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2023-03"
+  event: "RoboCup Japan Open 2022"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Open Platform League"
+    - "2nd place, @Home Education League"
+    - "1st place, @Home Simulation League (October 2022)"
+    - "First participation, @Home Domestic Standard Platform League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2022-03"
+  event: "RoboCup Japan Open 2021 (online)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Open Platform League"
+    - "1st place, @Home Simulation League"
+    - "2nd place, @Home Education League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2021-11"
+  event: "RoboCup Asia Pacific 2021"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "2nd place (runner-up), @Home Open Platform League"
+    - "1st place, @Home Education League"
+    - "1st place, @Home Simulation League"
+    - "Japanese Society for Artificial Intelligence Award, @Home"
+  verify: "The SOBITS history page lists Simulation OPL 2nd place and Simulation Technical Challenge 1st place instead."
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2020-12"
+  event: "RoboCup Japan Open 2020 (online)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Simulation League"
+    - "2nd place, @Home Education League"
+  verify: "The SOBITS history page lists different 2020 results (e.g. Education 1st, OPL 1st)."
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2019-08"
+  event: "RoboCup Japan Open 2019 (Nagaoka)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Simulation League"
+    - "4th place, @Home Education League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2018-08"
+  event: "World Robot Summit 2018 — Partner Robot Challenge (Virtual Space)"
+  scope: other
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "2nd place"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2018-05"
+  event: "RoboCup Japan Open 2018 (Ogaki)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Education League"
+    - "1st place, @Home Simulation League"
+  verify: "Simulation 1st place appears on the SOBITS history page only."
+  source: "https://teamsobits.github.io/about.html"
+
+- date: "2017-05"
+  event: "RoboCup Japan Open 2017"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Simulation League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2016-03"
+  event: "RoboCup Japan Open 2016"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "2nd place, @Home Simulation League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2015-05"
+  event: "RoboCup Japan Open 2015"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Simulation League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2014-05"
+  event: "RoboCup Japan Open 2014"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Simulation League"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2013-05"
+  event: "RoboCup Japan Open 2013"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "1st place, @Home Simulation League"
+    - "Japanese Society for Artificial Intelligence Award, @Home"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2012-05"
+  event: "RoboCup Japan Open 2012 (Osaka)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "@Home Innovation Award"
+  source: "https://teamsobits.github.io/publication.html"
+
+- date: "2011-05"
+  event: "RoboCup Japan Open 2011 (Osaka)"
+  scope: regional
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "4th place, @Home League"
+  source: "https://teamsobits.github.io/about.html"

@@ -1,0 +1,65 @@
+---
+layout: default
+title: Research & Achievements
+permalink: /research/
+kicker: Research
+lead: "Our research aims to make robots genuinely useful in everyday homes. Below are the main research themes of tRES for 2027 and the community contributions of the partner teams."
+description: "Research themes of tRES: place and person concept models, VLA fine-tuning, simulation reconstruction of real arenas, and humanoid robots for domestic tasks."
+---
+<section class="section">
+  <div class="container">
+    <div class="callout callout-note">
+      <strong>About the status labels</strong>
+      <p><span class="badge">Candidate</span> = planned topic for 2027, no published results yet. <span class="badge badge-ok">Ongoing</span> = work in progress with public code or papers linked. The final research focus will be described in our 2027 Team Description Paper.</p>
+    </div>
+    <div class="grid grid-2">
+      {% for th in site.data.research.themes %}
+      {% assign tm = site.data.teams | where: "id", th.team | first %}
+      <article class="card team-card team-{{ tm.color }}" id="{{ th.id }}" aria-labelledby="{{ th.id }}-title">
+        <p class="tags">{% include team-tag.html id=th.team %}<span class="badge{% if th.status == 'Ongoing' %} badge-ok{% endif %}">{{ th.status }}</span></p>
+        <h2 id="{{ th.id }}-title" style="font-size:1.35rem;margin-top:.4em">{{ th.title }}</h2>
+        <div class="role-box"><strong>In short</strong>{{ th.plain }}</div>
+        <p>{{ th.approach }}</p>
+        {% if th.evidence.size > 0 %}
+        <h3 style="font-size:1rem">Code and references</h3>
+        <ul>{% for e in th.evidence %}<li><a href="{{ e.url }}">{{ e.label }}</a></li>{% endfor %}</ul>
+        {% else %}
+        <p class="small muted">Papers and code will be linked here when available.</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="community-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Community</p>
+      <h2 id="community-title">Contributions to the RoboCup@Home community</h2>
+      <p>Contributions made by the partner teams, as documented on their websites.</p>
+    </div>
+    <div class="grid grid-2">
+      {% for c in site.data.research.community %}
+      {% assign tm = site.data.teams | where: "id", c.team | first %}
+      <article class="card">
+        <p class="tags">{% include team-tag.html id=c.team %}</p>
+        <h3 style="margin-top:.4em">{{ c.title }}</h3>
+        <p>{{ c.text }}</p>
+        <div class="card-links"><a href="{{ c.url }}">Learn more<span class="visually-hidden"> about {{ c.title }}</span></a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="more-title">
+  <div class="container">
+    <h2 id="more-title">More</h2>
+    <ul>
+      <li><a href="{{ '/publications/' | relative_url }}">Publications (last five years)</a></li>
+      <li><a href="{{ '/software/' | relative_url }}">Open-source software</a></li>
+      <li><a href="{{ '/history/' | relative_url }}">Competition history and awards</a></li>
+    </ul>
+  </div>
+</section>

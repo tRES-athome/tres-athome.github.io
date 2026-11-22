@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------
+# tRES — RoboCup@Home joint team website (Jekyll / GitHub Pages)
+# Most content lives in _data/*.yml. See README.md for editing.
+# ---------------------------------------------------------------
+title: "tRES"
+tagline: "Joint RoboCup@Home team of SOBITS, Erasers and READY"
+description: >-
+  tRES is a joint RoboCup@Home team formed by three teams — SOBITS, Erasers and
+  READY — preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR.
+url: "https://tres-athome.github.io"
+baseurl: ""
+lang: en
+
+# Date shown in the footer as "Last updated". Update when content changes.
+last_updated: "2026-11-22"
+
+# Publications from this year onward are listed (CfP: "last 5 years").
+publications_since: 2022
+
+# Official RoboCup@Home links
+athome_url: "https://athome.robocup.org/"
+cfp_url: "https://athome.robocup.org/call-for-participation-robocuphome-2027/"
+
+# GitHub organization of tRES
+github_org_url: "https://github.com/tres-athome"
+
+# Disable the default GitHub Pages theme (Primer); this site has its own layout and CSS.
+theme: null
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - node_modules/
+  - tools/

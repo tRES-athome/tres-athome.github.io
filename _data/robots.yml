@@ -1,0 +1,49 @@
+# Robots planned for RoboCup@Home 2027.
+# status: shown as a badge ("Planned platform" until the configuration is final).
+# media: add photos/videos once the team holds the rights to publish them.
+#   - type: image   src: /assets/img/robots/g1.jpg   alt: "..."   credit: "Photo: ..."
+#   - type: youtube id: "VIDEO_ID"   title: "..."
+# Leave media empty to show a placeholder.
+
+- id: g1
+  name: "Unitree G1"
+  maker: "Unitree Robotics"
+  kind: "Full-size humanoid robot"
+  status: "Planned platform"
+  operated_by: "Erasers"
+  summary: >-
+    A full-size humanoid robot. eR@sers is working on enabling the G1 to perform tasks in
+    domestic environments. At RoboCup 2026 Incheon it was the team's first humanoid entry in
+    @Home, and it performed well in the Restaurant and Human-Robot Interaction tasks.
+  hardware:
+    - "Full-size humanoid body (Unitree G1)"
+    - "Hands: Amazing Hand, released as open hardware by Pollen Robotics"
+    - "Open-hardware hands make maintenance and repair easier — important because humanoids can fall"
+    - "Detailed sensor and computing configuration for 2027: to be confirmed"
+  functions:
+    - "Humanoid execution of domestic service tasks"
+    - "Human-robot interaction (demonstrated in the 2026 HRI task)"
+    - "Restaurant-style serving tasks (demonstrated in 2026)"
+  software: "https://github.com/trcp/g1_ws"
+  source: "https://erasers.jp/robots/"
+  media: []
+
+- id: hsr
+  name: "Toyota HSR (Type B)"
+  maker: "Toyota Motor Corporation"
+  kind: "Mobile manipulator for domestic service"
+  status: "Planned platform"
+  operated_by: "To be confirmed"
+  summary: >-
+    The Human Support Robot (HSR) is a mobile manipulator with a single arm, developed by
+    Toyota as a domestic service robot. It has been used in RoboCup@Home for many years;
+    eR@sers introduced its HSR in 2016.
+  hardware:
+    - "Mobile base with a single manipulator"
+    - "Variant: Type B (as planned by tRES)"
+    - "Sensor and computing configuration for 2027: to be confirmed"
+  functions:
+    - "Domestic service tasks (navigation, object handling, interaction) — exact task coverage for 2027 to be confirmed"
+  software: ""
+  source: "https://erasers.jp/robots/"
+  media: []

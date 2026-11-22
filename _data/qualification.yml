@@ -1,0 +1,36 @@
+# Qualification materials for RoboCup@Home 2027.
+# status: "In preparation" | "Submitted" | "Published"
+# Set `url` when the item is public; the page then shows a link instead of the placeholder.
+
+current:
+  - id: tdp
+    title: "Team Description Paper (TDP) 2027"
+    description: "8-page scientific paper (Springer LNAI format) plus a 2-page annex describing tRES's research and robots."
+    status: "In preparation"
+    url: ""
+    pdf: true
+
+  - id: video
+    title: "Qualification Video 2027"
+    description: "Up to 10 minutes, in English or with English captions, showing the robots solving a task with at least five integrated abilities."
+    status: "In preparation"
+    url: ""          # e.g. https://www.youtube.com/watch?v=XXXXXXXX
+    youtube_id: ""   # optional: set to embed the video on the page
+
+# Past qualification materials of the partner teams (links only).
+past:
+  - team: sobits
+    label: "SOBITS 2026 Team Description Paper (PDF)"
+    url: "https://teamsobits.github.io/pdf/SOBITS_2026_Team_Description_Paper.pdf"
+  - team: sobits
+    label: "SOBITS 2024 Team Description Paper (PDF)"
+    url: "https://teamsobits.github.io/pdf/SOBITS_2024_Team_Description_Paper.pdf"
+  - team: sobits
+    label: "SOBITS 2024 Qualification Video (YouTube)"
+    url: "https://youtu.be/iAZ9yIX03NY"
+  - team: sobits
+    label: "SOBITS 2023 Qualification Video (YouTube)"
+    url: "https://youtu.be/brRIAtdjFRw"
+  - team: erasers
+    label: "eR@sers: qualification materials submitted for RoboCup 2026 (news)"
+    url: "https://erasers.jp/2026/02/11/we-have-submitted-the-qualification-materials-for-robocup-2026/"

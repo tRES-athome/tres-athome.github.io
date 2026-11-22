@@ -1,0 +1,55 @@
+---
+layout: default
+title: Open-source Software
+permalink: /software/
+kicker: Software
+lead: "Software that other RoboCup@Home teams can use. Every repository below is public and has a README that explains how to install and use it."
+description: "Open-source software and repositories of tRES and its partner teams for the RoboCup@Home community."
+---
+<section class="section">
+  <div class="container">
+    <div class="callout">
+      <strong>How to use our software</strong>
+      <ol>
+        <li>Open the repository’s <strong>README</strong> (“Documentation” link). It lists the requirements (Ubuntu, ROS version) and installation steps.</li>
+        <li>Clone the repository into your ROS workspace and build it as described.</li>
+        <li>Questions or bugs? Open an issue in the repository.</li>
+      </ol>
+    </div>
+
+    <div class="filters" data-filter-target="#sw-list" data-filter-key="team" role="group" aria-label="Filter software by team">
+      <span class="filter-label">Team:</span>
+      <button type="button" class="filter-btn" data-value="all" aria-pressed="true">All</button>
+      {% for t in site.data.teams %}<button type="button" class="filter-btn" data-value="{{ t.id }}" aria-pressed="false">{{ t.name }}</button>{% endfor %}
+      <span class="visually-hidden" aria-live="polite" data-filter-status></span>
+    </div>
+
+    <ul id="sw-list" class="grid grid-2 plain-list">
+      {% for s in site.data.software %}
+      <li class="card entry" data-team="{{ s.team }}">
+        <p class="tags">{% include team-tag.html id=s.team %}{% if s.license != "" %}<span class="badge">{% if s.license == "To be confirmed" %}License: to be confirmed{% else %}{{ s.license }}{% endif %}</span>{% endif %}</p>
+        <h2 style="font-size:1.25rem;margin-top:.4em">{{ s.name }}</h2>
+        <p>{{ s.purpose }}</p>
+        <dl class="facts small">
+          <dt>Stack</dt><dd>{{ s.stack }}</dd>
+          <dt>README</dt><dd>{{ s.readme_lang }}</dd>
+          <dt>Checked</dt><dd><time datetime="{{ s.checked }}">{{ s.checked }}</time></dd>
+        </dl>
+        <div class="card-links">
+          <a href="{{ s.docs }}">Documentation<span class="visually-hidden"> for {{ s.name }}</span></a>
+          <a href="{{ s.repo }}">Repository<span class="visually-hidden"> of {{ s.name }}</span></a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="callout" style="margin-top:28px">
+      <strong>All repositories</strong>
+      <p>
+        tRES: <a href="{{ site.github_org_url }}">github.com/tres-athome</a> ·
+        {% for t in site.data.teams %}{% if t.github != "" %}{{ t.name }}: <a href="{{ t.github }}">{{ t.github | remove: "https://" }}</a> · {% endif %}{% endfor %}
+        READY: <span class="badge badge-tbc">To be confirmed</span>
+      </p>
+    </div>
+  </div>
+</section>

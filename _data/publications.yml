@@ -1,0 +1,178 @@
+# Publications of the partner teams (last 5 years; see publications_since in _config.yml).
+# One entry per publication. Add new ones anywhere — the page sorts by year.
+#   team:    sobits | erasers | ready | tres   (who the work belongs to)
+#   type:    journal | conference | workshop | tdp | talk
+#   url:     paper page or PDF ("" if no public link yet)
+#   pdf:     true if `url` is a downloadable PDF
+#   note:    optional remark shown in small print (e.g. "Accepted")
+#   source:  where this entry was taken from (not shown on the page)
+
+- year: 2026
+  team: sobits
+  type: tdp
+  authors: "Team SOBITS"
+  title: "SOBITS 2026 Team Description Paper"
+  venue: "RoboCup@Home 2026 qualification"
+  url: "https://teamsobits.github.io/pdf/SOBITS_2026_Team_Description_Paper.pdf"
+  pdf: true
+  note: "Author list and venue as published on the SOBITS website — verify"
+  source: "https://teamsobits.github.io/about.html"
+
+- year: 2025
+  team: sobits
+  type: workshop
+  authors: "Keith Valentin Cardenas, Jiahao Sim, Yoshinobu Hagiwara, Yongwoon Choi"
+  title: "SOBIT LIGHT: An Accessible Open MoMa for data collection"
+  venue: "CoRL 2025 Workshop on Open Hardware, Korea"
+  url: ""
+  note: "Accepted"
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2025
+  team: sobits
+  type: conference
+  authors: "J. Sim, Y. Hagiwara, Y. Choi"
+  title: "Small Obstacle-Aware Person-Following for Mobile Robots Using Vision-Based Segmentation"
+  venue: "2025 IEEE 14th Global Conference on Consumer Electronics (GCCE), Osaka, Japan"
+  url: ""
+  note: "Accepted"
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2025
+  team: erasers
+  type: conference
+  authors: "Gai Nakatogawa, Sansei Hori"
+  title: "Adaptive Object Detection and Segmentation System for ROS2 using YOLO-World and SAM"
+  venue: "The 6th International Symposium on Neuromorphic AI Hardware, P1-25, Kitakyushu, Japan"
+  url: ""
+  source: "https://erasers.jp/publication/"
+
+- year: 2025
+  team: erasers
+  type: journal
+  authors: "Yoshiaki Mizuchi, Tetsunari Inamura"
+  title: "Interaction Quality Evaluation in Guiding Human Daily Life Behavior"
+  venue: "Journal of Robotics and Mechatronics, 37(3), 604–613"
+  url: "https://www.fujipress.jp/jrm/rb/robot003700030604/"
+  source: "https://erasers.jp/publication/"
+
+- year: 2025
+  team: erasers
+  type: journal
+  authors: "Tetsunari Inamura, Hiroki Yamada, Kazumi Morinaga, Natsuki Yamanobe, Ryo Hanai, Yukiyasu Domae"
+  title: "Development and Evaluation of a Human-Robot Collaborative Training System for Retail Stores Using Virtual Reality and Digital Twin Technologies"
+  venue: "Journal of Robotics and Mechatronics, 37(2), 478–487"
+  url: "https://www.fujipress.jp/jrm/rb/robot003700020478/"
+  source: "https://erasers.jp/publication/"
+
+- year: 2025
+  team: erasers
+  type: conference
+  authors: "Yoshiaki Mizuchi, Taisuke Kobayashi, Tetsunari Inamura"
+  title: "Extraction of Latent Variables for Modeling Subjective Quality in Time-series Human-Robot Interaction"
+  venue: "Proc. of the 2025 IEEE/SICE International Symposium on System Integration (SII), 936–941"
+  url: "https://ieeexplore.ieee.org/document/10870927"
+  source: "https://erasers.jp/publication/"
+
+- year: 2024
+  team: sobits
+  type: conference
+  authors: "K. Valentin, Y. Hagiwara, Y. Choi"
+  title: "Tray Balance Control by Deep Reinforcement Learning for Transporting Multiple Objects in a Mobile Manipulator"
+  venue: "The 2024 Korean Society for Power System Engineering Autumn Conference (KSPSE), Busan, Korea, p. 32"
+  url: ""
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2024
+  team: sobits
+  type: conference
+  authors: "F. Ono, Y. Hagiwara, Y. Choi"
+  title: "Path Planning Method Based on Trajectory Prediction for Avoidance of Moving Obstacles Using in Omni-Directional Mobile Robot"
+  venue: "The 2024 Korean Society for Power System Engineering Autumn Conference (KSPSE), Busan, Korea, p. 33"
+  url: ""
+  note: "Title spelled \"Planing\" on the source page — verify against the proceedings"
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2024
+  team: sobits
+  type: talk
+  authors: "K. Valentin, Y. Choi"
+  title: "SOBITS efforts in Open Source for General Purpose Life-Support Robots"
+  venue: "ROSCon JP 2024, Lightning Talk LT17"
+  url: "https://roscon.jp/2024/presentations/LT17.pdf"
+  pdf: true
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2024
+  team: sobits
+  type: talk
+  authors: "K. Valentin, J. Sim, F. Ono, K. Suzuki, J. Lee, Y. Hagiwara, Y. Choi"
+  title: "Introduction to SOBITS strategy for General Purpose Life-Support Robots"
+  venue: "RoboCup Malaysia Open 2024 @Home Symposium (oral presentation; Best Oral Presentation)"
+  url: ""
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2024
+  team: sobits
+  type: tdp
+  authors: "K. Valentin, J. Sim, Y. Choi, et al."
+  title: "SOBITS 2024 Team Description Paper"
+  venue: "RoboCup 2024 Eindhoven, @Home"
+  url: "https://teamsobits.github.io/pdf/SOBITS_2024_Team_Description_Paper.pdf"
+  pdf: true
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2023
+  team: sobits
+  type: conference
+  authors: "Y. Mukogawa, T. Suzuki, Y. Choi"
+  title: "Development of a Re-Tracking Method for a Person-Following Robot when it loses sight of the Target Person"
+  venue: "Proc. of the KSPSE Autumn Conference, 173–174"
+  url: ""
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2023
+  team: erasers
+  type: journal
+  authors: "Tetsunari Inamura"
+  title: "Digital Twin of Experience for Human–Robot Collaboration Through Virtual Reality"
+  venue: "International Journal of Automation Technology, 17(3), 284–291"
+  url: "https://www.fujipress.jp/ijat/au/ijate001700030284/"
+  source: "https://erasers.jp/publication/"
+
+- year: 2022
+  team: erasers
+  type: journal
+  authors: "Yoshiaki Mizuchi, Hiroki Yamada, Tetsunari Inamura"
+  title: "Evaluation of an Online Human-Robot Interaction Competition Platform based on Virtual Reality – Case Study in RCAP2021"
+  venue: "Advanced Robotics, 37(8), 510–517"
+  url: "https://www.tandfonline.com/doi/full/10.1080/01691864.2022.2145235"
+  note: "Year as listed by the source; verify (volume 37)"
+  source: "https://erasers.jp/publication/"
+
+- year: 2022
+  team: erasers
+  type: conference
+  authors: "Yoshiaki Mizuchi, Kouichi Iwami, Tetsunari Inamura"
+  title: "VR and GUI based Human-Robot Interaction Behavior Collection for Modeling the Subjective Evaluation of the Interaction Quality"
+  venue: "Proc. of the IEEE/SICE International Symposium on System Integration (SII), 375–382"
+  url: "https://ieeexplore.ieee.org/document/9708824"
+  source: "https://erasers.jp/publication/"
+
+- year: 2022
+  team: sobits
+  type: conference
+  authors: "Takumi Tsurue, Yongwoon Choi"
+  title: "Command Understanding Using Attention-based Sequence to Sequence for Unlearned Words in Adding General-Purpose Functionality to Automated Delivery Robots"
+  venue: "Proc. of the KSPSE Autumn Conference, 60–62"
+  url: ""
+  source: "https://teamsobits.github.io/publication.html"
+
+- year: 2022
+  team: sobits
+  type: conference
+  authors: "Daiki Murakami, Yongwoon Choi"
+  title: "Development of a person-following robot using a 2D LiDAR and a RGB-D sensor on a pan/tilt-rotated mechanism"
+  venue: "Proc. of the KSPSE Autumn Conference, 63–65"
+  url: ""
+  source: "https://teamsobits.github.io/publication.html"

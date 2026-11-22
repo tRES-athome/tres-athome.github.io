@@ -1,0 +1,59 @@
+---
+layout: default
+title: RoboCup History & Awards
+permalink: /history/
+kicker: History & Awards
+lead: "Participation, rankings and awards in RoboCup, regional RoboCup tournaments and related competitions. Every entry shows the team that achieved it."
+description: "RoboCup@Home participation, rankings and awards of SOBITS, Erasers and READY, and of tRES."
+---
+{% assign entries = site.data.awards | sort: "date" | reverse %}
+{% assign groups = entries | group_by_exp: "a", "a.date | slice: 0, 4" %}
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="margin-bottom:32px">
+      <div class="card team-card team-tres">
+        <h2 style="font-size:1.3rem">tRES (joint team)</h2>
+        <p><strong>No competition results yet.</strong> tRES was formed in 2026 and is applying for RoboCup@Home 2027. Results achieved as tRES will be listed here.</p>
+      </div>
+      <div class="card">
+        <h2 style="font-size:1.3rem">How to read this page</h2>
+        <ul>
+          <li>The team tag shows <strong>who achieved the result</strong>. “Entrant” is the name used at the event.</li>
+          <li><span class="badge badge-scope-world">RoboCup</span> world championship · <span class="badge">Regional</span> RoboCup regional/national open · <span class="badge">Other</span> other competitions.</li>
+          <li><span class="badge badge-tbc">To be confirmed</span> marks entries whose details differ between sources.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="filters" data-filter-target="#award-list" data-filter-key="team" role="group" aria-label="Filter results by team">
+      <span class="filter-label">Team:</span>
+      <button type="button" class="filter-btn" data-value="all" aria-pressed="true">All</button>
+      {% for t in site.data.teams %}<button type="button" class="filter-btn" data-value="{{ t.id }}" aria-pressed="false">{{ t.name }}</button>{% endfor %}
+      <span class="visually-hidden" aria-live="polite" data-filter-status></span>
+    </div>
+
+    <div id="award-list">
+      {% for g in groups %}
+      <section class="year-group" aria-labelledby="h{{ g.name }}">
+        <h2 id="h{{ g.name }}">{{ g.name }}</h2>
+        <ul class="entry-list">
+          {% for a in g.items %}
+          <li class="entry" data-team="{{ a.teams | join: ' ' }}">
+            <p class="tags">
+              {% for t in a.teams %}{% include team-tag.html id=t %}{% endfor %}
+              {% case a.scope %}{% when "world" %}<span class="badge badge-scope-world">RoboCup</span>{% when "regional" %}<span class="badge">Regional</span>{% else %}<span class="badge">Other</span>{% endcase %}
+              {% if a.year_label %}<span class="badge">{{ a.year_label }}</span>{% endif %}
+            </p>
+            <p class="entry-title" style="margin-top:.4em">{{ a.event }}</p>
+            <p class="entry-sub">Entrant: {{ a.entrant }}</p>
+            <ul>{% for r in a.results %}<li>{{ r }}</li>{% endfor %}</ul>
+            {% if a.verify %}{% include tbc.html note=a.verify show_note=true %}{% endif %}
+            <p class="entry-source" style="margin:.4em 0 0"><a href="{{ a.source }}">Source<span class="visually-hidden">: {{ a.event }}</span></a></p>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>

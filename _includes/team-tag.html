@@ -1,0 +1,1 @@
+{% assign _t = site.data.teams | where: "id", include.id | first %}{% if _t %}<span class="team-tag team-{{ _t.color }}">{{ _t.name }}</span>{% elsif include.id == "tres" %}<span class="team-tag team-tres">tRES</span>{% endif %}
