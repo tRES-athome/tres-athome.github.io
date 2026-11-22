@@ -47,7 +47,7 @@ bundle exec jekyll serve
 3. 数分後に <https://tres-athome.github.io> で公開されます（Actions タブでビルド状況を確認できます）。
 4. 公開後、HTTPS が有効（*Enforce HTTPS*）になっていることを確認。
 
-※ 現在はレビュー用ブランチ `claude/tres-robocup-website-yqotd3` にあります。`main` へのマージと Pages 設定は、内容確認後にチームで行ってください。
+※ 2026-11-22 に `main` ブランチから公開済みです（Settings → Pages: `main` / `(root)`）。`main` に push すると数分で自動的にサイトへ反映されます。
 ※ CfP の注意「No IP addresses permitted」に従い、URLは必ずドメイン（`tres-athome.github.io`）で提出してください。
 
 ## よくある更新

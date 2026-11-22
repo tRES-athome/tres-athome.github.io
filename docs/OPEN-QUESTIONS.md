@@ -48,8 +48,7 @@
 - 文章は各サイトの記述を要約・英訳したもの。各チームの確認を推奨。
 - 他チームサイトの TDP・動画へのリンクは「リンク」のみ（埋め込みなし）。
 
-## 5. 公開・設定（実施前にご確認ください）
+## 5. 公開・設定
 
-- 作業ブランチ `claude/tres-robocup-website-yqotd3` に push 済み。**`main` へのマージ、GitHub Pages の有効化、リポジトリ設定の変更は行っていません。**
-- GitHub 上のリポジトリ `tres-athome/tres-athome.github.io` は確認時点で空（ブランチなし）でした。`main` ブランチの作成方法（このブランチから作る／PR でマージ）を決めてください。
+- 2026-11-22 公開済み：リポジトリを public に変更、GitHub Pages を `main` / `(root)` で有効化、既定ブランチは `main`（作業ブランチは削除済み）。
 - CfP の「No IP addresses permitted」に注意し、提出フォームには `https://tres-athome.github.io` を記入。
