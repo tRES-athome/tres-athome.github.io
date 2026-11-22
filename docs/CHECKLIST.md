@@ -22,7 +22,8 @@
 
 ## B. チーム情報
 
-- [ ] Re@dy の所属機関、紹介文、公式サイト URL、GitHub → `teams.yml`
+- [x] Re@dy の所属機関（National Institute of Technology, Kitakyushu College）
+- [ ] Re@dy の紹介文、公式サイト URL、GitHub → `teams.yml`
 - [ ] SOBITS・eR@sers の紹介文の確認（各チーム代表のチェック）
 - [ ] HSR（タイプB）の運用担当チーム → `robots.yml` `operated_by`
 - [ ] 2027 年用のハードウェア構成（センサ、計算機、外部計算機の有無）→ `robots.yml` `hardware`
