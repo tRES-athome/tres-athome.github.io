@@ -4,7 +4,7 @@
     <div class="team-photo-frame"><img src="{{ ph.src | relative_url }}" alt="{{ ph.alt | escape }}" loading="lazy"></div>
     <figcaption>
       <span class="tags">{% for t in ph.teams %}{% include team-tag.html id=t %}{% endfor %}</span>
-      <span class="team-photo-caption">{{ ph.caption }}{% if ph.credit != "" %} <span class="muted">({{ ph.credit }})</span>{% endif %}</span>
+      <span class="team-photo-caption">{{ ph.caption }}{% if ph.credit != "" %} <span class="muted">({% if ph.credit_url %}<a href="{{ ph.credit_url }}">{{ ph.credit }}</a>{% else %}{{ ph.credit }}{% endif %})</span>{% endif %}</span>
     </figcaption>
   </figure>
   {% endfor %}
