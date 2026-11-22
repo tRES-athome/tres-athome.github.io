@@ -48,7 +48,7 @@ description: "RoboCup@Home participation, rankings and awards of Re@dy, eR@sers 
             <p class="entry-sub">Entrant: {{ a.entrant }}</p>
             <ul>{% for r in a.results %}<li>{{ r }}</li>{% endfor %}</ul>
             {% if a.verify %}{% include tbc.html note=a.verify show_note=true %}{% endif %}
-            <p class="entry-source" style="margin:.4em 0 0"><a href="{{ a.source }}">Source<span class="visually-hidden">: {{ a.event }}</span></a></p>
+            {% if a.source != "" %}<p class="entry-source" style="margin:.4em 0 0"><a href="{{ a.source }}">Source<span class="visually-hidden">: {{ a.event }}</span></a></p>{% endif %}
           </li>
           {% endfor %}
         </ul>

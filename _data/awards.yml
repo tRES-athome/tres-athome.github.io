@@ -8,7 +8,7 @@
 #   date:    YYYY-MM (used for sorting; only the year is shown)
 #   year_label: optional text shown instead of the year (e.g. "2021–2023")
 #   verify:  optional — shown as a "To be confirmed" badge with this explanation
-#   source:  URL the entry was taken from
+#   source:  URL the entry was taken from ("" if provided directly by the team)
 
 # ---------------------------------------------------------------- tRES
 # (no entries yet — tRES competes for the first time in 2027)
@@ -218,6 +218,15 @@
   source: "https://erasers.jp/awards/"
 
 # ---------------------------------------------------------------- SOBITS
+- date: "2026-07"
+  event: "RoboCup 2026 Incheon"
+  scope: world
+  teams: [sobits]
+  entrant: "SOBITS"
+  results:
+    - "13th of 24 teams, @Home League"
+  source: ""   # provided by the team (2026-11-22); add a public results URL if available
+
 - date: "2025-05"
   event: "RoboCup Japan Open 2025 (Shiga)"
   scope: regional
@@ -266,8 +275,8 @@
   source: "https://teamsobits.github.io/publication.html"
 
 - date: "2023-07"
-  event: "RoboCup France Open 2023"
-  scope: regional
+  event: "RoboCup 2023 Bordeaux"
+  scope: world
   teams: [sobits]
   entrant: "SOBITS"
   results:
