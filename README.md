@@ -1,6 +1,6 @@
 # tRES — RoboCup@Home joint team website
 
-Official website of **tRES**, the joint RoboCup@Home team of **SOBITS**, **Erasers** and **READY**.
+Official website of **tRES**, the joint RoboCup@Home team of **Re@dy**, **eR@sers** and **SOBITS**.
 Published at <https://tres-athome.github.io> (GitHub Pages, Jekyll).
 
 > このREADMEとdocs/はサイトに公開されません（`_config.yml`の`exclude`で除外）。以下、更新担当者向けに日本語で説明します。
@@ -10,7 +10,7 @@ Published at <https://tres-athome.github.io> (GitHub Pages, Jekyll).
 ```
 _config.yml          サイト設定（最終更新日、論文の掲載開始年、公式リンク）
 _data/               ★ 掲載内容はほぼすべてここ（YAML）
-  teams.yml          3チームの紹介・リンク（READYのURLは未確認のため空欄）
+  teams.yml          3チームの紹介・リンク（Re@dyのURLは未確認のため空欄）
   robots.yml         G1 / HSR の説明・写真/動画
   research.yml       研究テーマ・コミュニティ貢献
   publications.yml   論文（直近5年）
