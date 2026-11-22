@@ -16,9 +16,9 @@
 - [ ] **ロボットの動画**（YouTube 推奨、英語または英語字幕）→ `robots.yml` `media`
 - [ ] **TDP 2027**（PDF または URL）→ `qualification.yml`（`status` を更新）
 - [ ] **クオリフィケーションビデオ 2027**（YouTube URL / ID）→ `qualification.yml`
-- [ ] **READY 関連論文**（直近5年）→ `publications.yml`
+- [ ] **Re@dy 関連論文**（直近5年）→ `publications.yml`
 - [ ] **論文リンク**：「Link to be added」と表示されている論文の DOI・PDF → `publications.yml`
-- [ ] **READY の大会参加歴・受賞** → `awards.yml`
+- [ ] **Re@dy の大会参加歴・受賞** → `awards.yml`
 
 ## B. チーム情報
 

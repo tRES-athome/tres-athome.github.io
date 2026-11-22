@@ -10,7 +10,7 @@
 | 大会日程（2027-06-15〜21、ドイツ・ニュルンベルク、OPL）、締切、TDP・動画・Webサイト要件、評価基準 | https://athome.robocup.org/call-for-participation-robocuphome-2027/ |
 | 審査基準の詳細（リンクのみ） | https://athome.robocup.org/rules/submission-review-criteria/ |
 
-## Erasers（eR@sers, 玉川大学）
+## eR@sers（玉川大学）
 
 | 情報 | 出典 |
 |---|---|
@@ -60,7 +60,7 @@
 - **各チームサイトの写真・動画**：転載の許諾を確認できないため。リンクのみ掲載し、プレースホルダーを表示。
 - **SOBITS の船舶関連の論文**（バース支援・ドッキング等）：RoboCup@Home との関連が薄いため除外。必要なら `publications.yml` に追加可能。
 - **2021 年以前の論文**：CfP の「直近5年」に合わせ 2022 年以降のみ表示（データとしての追加は可能）。
-- **Erasers の Flying Robot Challenge、WRS ジュニア部門（Pacific Hou-Ou）**：@Home と直接関係しないため除外。
+- **eR@sers の Flying Robot Challenge、WRS ジュニア部門（Pacific Hou-Ou）**：@Home と直接関係しないため除外。
 - **RCJ 2023 の人工知能学会賞（OPL Steering Committee 個人宛）**：チームの成績ではないため除外。
 - **学生メンバー個人名**：tRES の名簿が未確定のため、各チームのメンバーページへのリンクのみ。
 - **各チームの連絡先メール**：tRES の連絡先として使ってよいか未確認のため掲載せず。

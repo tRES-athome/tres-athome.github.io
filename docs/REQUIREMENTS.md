@@ -10,7 +10,7 @@
 | W0 | *designed for a broader audience* | 全ページ（平易な英語、"In short" 欄） | — | ✅ |
 | W1 | Photos and videos of the robot(s) | Robots（`/robots/`）各ロボットの写真・動画枠 / Qualification の動画枠 | `robots.yml` `media`, `qualification.yml` | ⚠️ 枠のみ。自前素材の追加が必要 |
 | W2 | Description of the approaches and information on scientific achievements | Research（`/research/`）、About「Why a joint team?」 | `research.yml` | ⚠️ 研究テーマは候補段階。成果（論文・数値）を追記 |
-| W3 | Relevant publications (last 5 years, preferably available to download) | Publications（`/publications/`）年別・チーム別、PDFバッジ | `publications.yml`, `publications_since: 2022` | ⚠️ 18件掲載。リンク未設定の論文あり、READY分なし |
+| W3 | Relevant publications (last 5 years, preferably available to download) | Publications（`/publications/`）年別・チーム別、PDFバッジ | `publications.yml`, `publications_since: 2022` | ⚠️ 18件掲載。リンク未設定の論文あり、Re@dy分なし |
 | W4 | Link to repositories with software for the community | Software（`/software/`）README・リポジトリへのリンク、使い方 | `software.yml` | ✅ 10件（ライセンス・README言語の一部は要確認） |
 | W5 | Team members | People（`/people/`）チーム別ロスター | `people.yml` `rosters` | ❌ 名簿未確定 |
 | W5a | Principal Investigator … with a link to their website | People「Key roles」 | `people.yml` `roles` | ❌ 未確定 |
