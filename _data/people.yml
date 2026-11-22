@@ -38,18 +38,3 @@ rosters:
   - team: sobits
     members: []
     members_page: "https://teamsobits.github.io/member.html"
-
-# Faculty named with their titles on the partner teams' public websites (for reference).
-faculty:
-  - name: "Yongwoon Choi"
-    title: "Professor"
-    team: sobits
-    affiliation: "Soka University"
-    url: ""
-    source: "https://teamsobits.github.io/member.html"
-  - name: "Yoshinobu Hagiwara"
-    title: "Associate Professor"
-    team: sobits
-    affiliation: "Soka University"
-    url: ""
-    source: "https://teamsobits.github.io/member.html"

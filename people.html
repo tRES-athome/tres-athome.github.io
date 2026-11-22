@@ -63,23 +63,3 @@ description: "Members of tRES, Principal Investigator, Team Leader and Contact P
     </div>
   </div>
 </section>
-
-{% if P.faculty.size > 0 %}
-<section class="section" aria-labelledby="faculty-title">
-  <div class="container">
-    <div class="section-head">
-      <h2 id="faculty-title">Faculty of the partner laboratories</h2>
-      <p>As listed on the partner teams’ websites. Roles within tRES are shown in the “Key roles” table above.</p>
-    </div>
-    <ul class="grid grid-3 plain-list">
-      {% for f in P.faculty %}
-      <li class="card">
-        <p class="tags">{% include team-tag.html id=f.team %}</p>
-        <h3 style="margin-top:.4em">{% if f.url != "" %}<a href="{{ f.url }}">{{ f.name }}</a>{% else %}{{ f.name }}{% endif %}</h3>
-        <p class="card-meta">{{ f.title }}, {{ f.affiliation }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-{% endif %}
