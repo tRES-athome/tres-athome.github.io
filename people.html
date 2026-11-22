@@ -46,6 +46,7 @@ description: "Members of tRES, Principal Investigator, Team Leader and Contact P
       <h2 id="members-title">Team members</h2>
       <p>The tRES roster for 2027 is being finalized. Members are listed by home team.</p>
     </div>
+    <div style="margin-bottom:32px">{% include team-photos.html %}</div>
     <div class="grid grid-3">
       {% for g in P.rosters %}
       {% assign tm = site.data.teams | where: "id", g.team | first %}

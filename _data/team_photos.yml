@@ -1,0 +1,21 @@
+# Team photos (shown on the Home and People pages).
+# NOTE: The review criteria (H-G1) require at least one photo of most team members together
+# with the fully assembled robot, taken in the current qualification year. Replace or add
+# photos when the latest group photos are available.
+#   teams:   team ids shown as tags
+#   year:    year the photo was taken ("" if unknown)
+#   credit:  photo credit (optional)
+
+- src: /assets/img/team/erasers-ready-robocup2026.jpg
+  teams: [ready, erasers]
+  alt: "Members of eR@sers and Re@dy posing with the Toyota HSR and the Unitree G1 humanoid in front of the RoboCup 2026 Incheon backdrop"
+  caption: "eR@sers & Re@dy with the Toyota HSR and Unitree G1 at RoboCup 2026 Incheon"
+  year: "2026"
+  credit: ""
+
+- src: /assets/img/team/sobits-group.jpg
+  teams: [sobits]
+  alt: "Group photo of Team SOBITS members with their robots in front of a white building with columns at Soka University"
+  caption: "Team SOBITS with its robots at Soka University"
+  year: ""
+  credit: ""

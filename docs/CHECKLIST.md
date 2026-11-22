@@ -6,6 +6,7 @@
 ## A. 必須（CfP の Website 要件）
 
 - [ ] **【不合格条件 H-G1】チーム集合写真**：メンバーの大半と組み立て済みロボットが一緒に写った、今年度撮影の写真。TDP・動画・Webサイトのいずれかに必須（無いと自動不合格）。Webサイトにも載せるのが安全 → [審査基準](https://athome.robocup.org/rules/submission-review-criteria/)
+  - 2026-11-22：暫定で2枚掲載（eR@sers & Re@dy の RoboCup 2026 Incheon 写真〔302×201px と低解像度〕、SOBITS 集合写真〔撮影年未記載〕）→ `_data/team_photos.yml`。最新の集合写真（できれば3チーム合同）と高解像度版に差し替え予定
 
 - [ ] **Principal Investigator**：氏名・所属・研究室/個人サイトURL → `people.yml` `roles`
 - [ ] **Team Leader**：氏名・所属 → `people.yml` `roles`
