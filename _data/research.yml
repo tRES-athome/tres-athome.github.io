@@ -67,7 +67,7 @@ themes:
         url: "https://github.com/trcp/g1_ws"
       - label: "Amazing Hand connector for Unitree G1"
         url: "https://github.com/trcp/g1_amazing_hand_connector"
-      - label: "Erasers: Robots"
+      - label: "eR@sers: Robots"
         url: "https://erasers.jp/robots/"
 
 # Community contributions documented on the partner teams' websites.

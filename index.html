@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-description: "tRES is a joint RoboCup@Home team formed by SOBITS, Erasers and READY, preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR."
+description: "tRES is a joint RoboCup@Home team formed by SOBITS, eR@sers and Re@dy, preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR."
 ---
 {% assign sobits = site.data.teams | where: "id", "sobits" | first %}
 {% assign erasers = site.data.teams | where: "id", "erasers" | first %}
@@ -12,16 +12,16 @@ description: "tRES is a joint RoboCup@Home team formed by SOBITS, Erasers and RE
     <div>
       {% include wordmark.html large=true %}
       <h1 id="hero-title">Three RoboCup@Home teams.<br>One joint team.</h1>
-      <p>tRES brings together <strong>SOBITS</strong> (Soka University), <strong>Erasers</strong> (Tamagawa University) and <strong>READY</strong> to build service robots that help people at home. We are preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR.</p>
-      <p class="small">“Tres” means “three” in Spanish, and R, E and S stand for READY, Erasers and SOBITS.</p>
+      <p>tRES brings together <strong>SOBITS</strong> (Soka University), <strong>eR@sers</strong> (Tamagawa University) and <strong>Re@dy</strong> to build service robots that help people at home. We are preparing for RoboCup@Home 2027 with a Unitree G1 humanoid and a Toyota HSR.</p>
+      <p class="small">“Tres” means “three” in Spanish, and R, E and S stand for Re@dy, eR@sers and SOBITS.</p>
       <div class="actions">
         <a class="btn btn-primary" href="{{ '/robots/' | relative_url }}">Meet the robots</a>
         <a class="btn btn-ghost" href="{{ '/qualification/' | relative_url }}">Qualification materials</a>
       </div>
     </div>
     <ul class="trio plain-list" aria-label="Teams in tRES">
-      <li class="trio-item r"><span class="trio-letter" aria-hidden="true">R</span><span><span class="trio-name">READY</span><br><span class="trio-aff">Affiliation to be confirmed</span></span></li>
-      <li class="trio-item e"><span class="trio-letter" aria-hidden="true">E</span><span><span class="trio-name">Erasers (eR@sers)</span><br><span class="trio-aff">Tamagawa University</span></span></li>
+      <li class="trio-item r"><span class="trio-letter" aria-hidden="true">R</span><span><span class="trio-name">Re@dy</span><br><span class="trio-aff">Affiliation to be confirmed</span></span></li>
+      <li class="trio-item e"><span class="trio-letter" aria-hidden="true">E</span><span><span class="trio-name">eR@sers</span><br><span class="trio-aff">Tamagawa University</span></span></li>
       <li class="trio-item s"><span class="trio-letter" aria-hidden="true">S</span><span><span class="trio-name">SOBITS</span><br><span class="trio-aff">Soka University</span></span></li>
     </ul>
   </div>
@@ -48,13 +48,12 @@ description: "tRES is a joint RoboCup@Home team formed by SOBITS, Erasers and RE
       {% for t in site.data.teams %}
       <article class="card team-card team-{{ t.color }}" aria-labelledby="team-{{ t.id }}">
         <span class="team-letter" aria-hidden="true">{{ t.letter }}</span>
-        <h3 id="team-{{ t.id }}">{{ t.name }}{% if t.display and t.display != t.name %} <span class="muted small">({{ t.display }})</span>{% endif %}</h3>
+        <h3 id="team-{{ t.id }}">{{ t.name }}</h3>
         <p class="card-meta">{% if t.affiliation == "To be confirmed" %}Affiliation: {% include tbc.html %}{% else %}{{ t.affiliation }}{% endif %}</p>
         <p>{{ t.summary }}</p>
         {% if t.focus.size > 0 %}
         <ul>{% for f in t.focus %}<li>{{ f }}</li>{% endfor %}</ul>
         {% endif %}
-        <div class="role-box"><strong>Role in tRES</strong>{% if t.tres_role == "To be confirmed." %}{% include tbc.html %}{% else %}{{ t.tres_role }}{% endif %}</div>
         <div class="card-links">
           {% if t.url != "" %}<a href="{{ t.url }}">{{ t.name }} website<span class="visually-hidden"> (external)</span></a>{% else %}<span>Website: {% include tbc.html %}</span>{% endif %}
           {% if t.github != "" %}<a href="{{ t.github }}">GitHub</a>{% endif %}
@@ -75,11 +74,11 @@ description: "tRES is a joint RoboCup@Home team formed by SOBITS, Erasers and RE
     <div class="grid grid-3">
       <div class="card team-card team-erasers">
         <h3>Humanoid robots at home</h3>
-        <p>Bringing a full-size humanoid (Unitree G1) into domestic tasks such as serving and interacting with people. <span class="muted">Led by Erasers.</span></p>
+        <p>Bringing a full-size humanoid (Unitree G1) into domestic tasks such as serving and interacting with people.</p>
       </div>
       <div class="card team-card team-sobits">
         <h3>Robots that understand homes</h3>
-        <p>Concept models of places and people, fine-tuned Vision-Language-Action models, and simulation copies of real arenas. <span class="muted">Led by SOBITS.</span></p>
+        <p>Concept models of places and people, fine-tuned Vision-Language-Action models, and simulation copies of real arenas.</p>
       </div>
       <div class="card team-card team-tres">
         <h3>Sharing with the community</h3>

@@ -22,9 +22,8 @@
 
 ## B. チーム情報
 
-- [ ] READY の正式名称・表記（READY / Re@dy）、所属機関、紹介文、公式サイト URL、GitHub → `teams.yml`
-- [ ] READY の tRES での役割 → `teams.yml` `tres_role`
-- [ ] SOBITS・Erasers の紹介文・役割の確認（各チーム代表のチェック）
+- [ ] Re@dy の所属機関、紹介文、公式サイト URL、GitHub → `teams.yml`
+- [ ] SOBITS・eR@sers の紹介文の確認（各チーム代表のチェック）
 - [ ] HSR（タイプB）の運用担当チーム → `robots.yml` `operated_by`
 - [ ] 2027 年用のハードウェア構成（センサ、計算機、外部計算機の有無）→ `robots.yml` `hardware`
 

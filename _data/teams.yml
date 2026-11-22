@@ -20,11 +20,9 @@
     - "Vision-Language-Action (VLA) models and world models"
     - "Real-to-simulation reconstruction (Real2Sim2Real)"
     - "Open-source ROS software"
-  tres_role: "Scientific contributions: place and person concept models, VLA fine-tuning, and simulation reconstruction of real arenas (planned)."
 
 - id: erasers
-  name: "Erasers"
-  display: "eR@sers"
+  name: "eR@sers"
   letter: "E"
   color: erasers
   affiliation: "Advanced Intelligence & Robotics Research Center (AIBot), Tamagawa University (Tokyo, Japan)"
@@ -34,26 +32,23 @@
   summary: >-
     eR@sers is a robotics laboratory and competition team at Tamagawa University. It won
     RoboCup@Home in 2008 and 2010, and in 2026 entered @Home with a Unitree G1 humanoid for
-    the first time, together with READY.
+    the first time, together with Re@dy.
   focus:
     - "Domestic service robots (Toyota HSR since 2016)"
     - "Humanoid robots for home tasks (Unitree G1)"
     - "Human-robot interaction and VR platforms (SIGVerse)"
     - "Organizing and simulation work for the RoboCup@Home community"
-  tres_role: "Humanoid technology for the Unitree G1 (planned)."
 
 - id: ready
-  name: "READY"
-  display: "Re@dy"
+  name: "Re@dy"
   letter: "R"
   color: ready
   affiliation: "To be confirmed"
-  url: ""          # TODO: add READY's official website once confirmed
+  url: ""          # TODO: add Re@dy's official website once confirmed
   github: ""
   since: "To be confirmed"
   summary: >-
-    READY competed together with eR@sers at RoboCup 2026 Incheon, where the joint entry
+    Re@dy competed together with eR@sers at RoboCup 2026 Incheon, where the joint entry
     "eR@sers & Re@dy" received the Best Humanoid Award. A full team profile will be added
     after confirmation.
   focus: []
-  tres_role: "To be confirmed."

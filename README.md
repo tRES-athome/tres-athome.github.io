@@ -58,7 +58,7 @@ bundle exec jekyll serve
 | 受賞・順位を追加 | `_data/awards.yml` に追加。**必ず `teams` と `entrant` を正しく**。tRES としての成果は `teams: [tres]` |
 | PI・リーダー・連絡先を確定 | `_data/people.yml` の `roles` を埋めて `confirmed: true` |
 | メンバーを掲載 | `_data/people.yml` の `rosters[].members` |
-| READY の情報 | `_data/teams.yml` の `ready`（`url`, `affiliation`, `summary`, `tres_role`） |
+| Re@dy の情報 | `_data/teams.yml` の `ready`（`url`, `affiliation`, `summary`） |
 | ロボットの写真・動画 | 画像を `assets/img/robots/` に置き、`_data/robots.yml` の `media` に追加（`alt` 必須） |
 | TDP・動画を公開 | `_data/qualification.yml` の `current` で `url`（と `youtube_id`）を入れ、`status` を変更 |
 | OSS を追加 | `_data/software.yml`（README・利用方法があり、更新が続いているもののみ） |

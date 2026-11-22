@@ -13,7 +13,7 @@
 # ---------------------------------------------------------------- tRES
 # (no entries yet — tRES competes for the first time in 2027)
 
-# ---------------------------------------------------------------- Erasers (and joint entries)
+# ---------------------------------------------------------------- eR@sers (and joint entries)
 - date: "2026-07"
   event: "RoboCup 2026 Incheon"
   scope: world
@@ -187,7 +187,7 @@
   entrant: "eR@sers"
   results:
     - "2nd place, @Home"
-  verify: "Listed on the Erasers About page but not on its Awards page."
+  verify: "Listed on the eR@sers About page but not on its Awards page."
   source: "https://erasers.jp/about/"
 
 - date: "2010-06"
