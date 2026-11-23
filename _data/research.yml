@@ -1,13 +1,13 @@
 # Research themes of tRES.
-# status: "Candidate" = topic planned for 2027, results not yet published.
-#         "Ongoing"   = work with public evidence (code, papers) linked below.
+# status: "Ongoing"   = work in progress (add code / papers under `evidence` when available)
+#         "Candidate" = topic planned for 2027, work not started yet
 # Keep descriptions short and in plain English for a general audience.
 
 themes:
   - id: concepts
     title: "Place and person concept models"
     team: sobits
-    status: "Candidate"
+    status: "Ongoing"
     plain: >-
       Helping a robot learn what places ("kitchen", "by the sofa") and people mean in a home,
       so it can follow everyday instructions such as "bring this to the person in the living room".
