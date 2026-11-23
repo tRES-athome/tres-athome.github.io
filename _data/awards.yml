@@ -270,8 +270,7 @@
     - "1st place, @Home Open Platform League"
     - "1st place, @Home Simulation Open Platform League"
     - "4th place, @Home Education League"
-    - "5th place, @Home Domestic Standard Platform League (Special Award for Outstanding Effort)"
-  verify: "The league name for the 5th place differs between SOBITS pages (\"Domestic Service Platform League\" / \"Domestic Open Platform League\")."
+    - "5th place, @Home Domestic Service Platform League (Special Award for Outstanding Effort)"
   source: "https://teamsobits.github.io/publication.html"
 
 - date: "2023-07"
@@ -293,7 +292,6 @@
     - "1st place, @Home Simulation League"
     - "3rd place, @Home Education League"
     - "Participation, @Home Domestic Standard Platform League"
-  verify: "The SOBITS history page lists 2nd place (not 3rd) in the Education League."
   source: "https://teamsobits.github.io/publication.html"
 
 - date: "2023-03"
@@ -325,12 +323,14 @@
   teams: [sobits]
   entrant: "SOBITS"
   results:
-    - "2nd place (runner-up), @Home Open Platform League"
     - "1st place, @Home Education League"
-    - "1st place, @Home Simulation League"
-    - "Japanese Society for Artificial Intelligence Award, @Home"
-  verify: "The SOBITS history page lists Simulation OPL 2nd place and Simulation Technical Challenge 1st place instead."
-  source: "https://teamsobits.github.io/publication.html"
+    - "2nd place, @Home Education League Technical Challenge"
+    - "2nd place, @Home Open Platform League"
+    - "1st place, @Home Open Platform League Technical Challenge"
+    - "1st place, @Home Simulation Open Platform League"
+    - "2nd place, @Home Simulation OPL Technical Challenge"
+    - "Japanese Society for Artificial Intelligence Award"
+  source: "https://www.soka.ac.jp/news/2021/12/6698/"
 
 - date: "2020-12"
   event: "RoboCup Japan Open 2020 (online)"
@@ -340,7 +340,6 @@
   results:
     - "1st place, @Home Simulation League"
     - "2nd place, @Home Education League"
-  verify: "The SOBITS history page lists different 2020 results (e.g. Education 1st, OPL 1st)."
   source: "https://teamsobits.github.io/publication.html"
 
 - date: "2019-08"

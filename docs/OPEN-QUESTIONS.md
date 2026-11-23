@@ -23,14 +23,12 @@
 | eR@sers RoboCup 2012 準優勝 | About には記載、Awards ページには記載なし | 掲載 ＋ TBC |
 | eR@sers 合同チーム 2021–2023 | 「4位、Smoothest Safest Navigation 2回」の年・リーグ・チーム名が不明。Awards には 2022（Tama-Goya）の1回のみ | 要約として掲載 ＋ TBC |
 | eR@sers 2024 準優勝 | About: 「RoboCup 2024 2nd place」/ Awards: DSPL 2位 | DSPL 2位 |
-| SOBITS RCJ 2023 Education | 受賞一覧: 3位 / 沿革: 2位 | 3位 ＋ TBC |
-| SOBITS RCAP 2021 Simulation | 受賞一覧: 優勝 / 沿革: Sim OPL 2位、Technical Challenge 1位 | 受賞一覧に従う ＋ TBC |
-| SOBITS RCJ 2020 | 受賞一覧: Sim 1位、Edu 2位 / 沿革: Sim OPL 1位、Edu 1位、OPL 1位 ほか | 受賞一覧に従う ＋ TBC |
-| SOBITS RCJ 2024 の 5位 | 「Domestic Service Platform League」/「Domestic Open Platform League (Special Award for Outstanding Effort)」 | DSPL 5位（特別賞併記）＋ TBC |
 | SOBITS RCJ 2018 Simulation 1位 | 沿革のみに記載 | 掲載 ＋ TBC |
 | eR@sers 論文（Advanced Robotics 37(8)） | 出典は 2022 年と記載。巻号から 2023 年の可能性 | 2022 ＋ 注記 |
 | SOBITS 論文タイトル | 出典の「Path Planing」を「Path Planning」と表記 | 注記あり。原典で確認 |
 | SOBITS 2026 TDP の著者・提出先 | PDF は公開されているが、書誌情報は未確認 | 「Team SOBITS」として掲載 ＋ 注記 |
+
+確認済み（2026-11-23、Sim）：RCJ 2024 は Domestic Service Platform League 5位、RCJ 2023 Education は3位、RCJ 2020 は Simulation 1位・Education 2位、RCAP 2021 は創価大学ニュース（https://www.soka.ac.jp/news/2021/12/6698/）の受賞一覧に合わせて修正。
 
 ## 3. 古くなっている可能性がある情報
 
