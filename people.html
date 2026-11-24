@@ -55,7 +55,12 @@ description: "Members of tRES, Principal Investigator, Team Leader and Contact P
         <p class="card-meta">{% if tm.affiliation == "To be confirmed" %}Affiliation: {% include tbc.html %}{% else %}{{ tm.affiliation }}{% endif %}</p>
         {% if g.members.size > 0 %}
         <p class="small muted">{{ g.members.size }} members</p>
-        <ul class="roster">{% for m in g.members %}<li>{{ m.name }}{% if m.position %} — {{ m.position }}{% endif %}{% if m.role %} <span class="muted">({{ m.role }})</span>{% endif %}</li>{% endfor %}</ul>
+        {% assign titled = g.members | where_exp: "m", "m.position" %}
+        {% assign others = g.members | where_exp: "m", "m.position == nil" %}
+        {% if titled.size > 0 %}
+        <ul class="faculty plain-list">{% for m in titled %}<li><strong>{{ m.name }}</strong><span class="faculty-title">{{ m.position }}</span></li>{% endfor %}</ul>
+        {% endif %}
+        <ul class="roster">{% for m in others %}<li>{{ m.name }}{% if m.role %} <span class="muted">({{ m.role }})</span>{% endif %}</li>{% endfor %}</ul>
         {% else %}
         <p>Members: {% include tbc.html %}</p>
         {% endif %}

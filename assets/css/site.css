@@ -344,3 +344,7 @@ a.card h3 { color: var(--link); }
 .roster { columns: 2; column-gap: 20px; padding-left: 1.1em; }
 .roster li { break-inside: avoid; }
 @media (max-width: 400px) { .roster { columns: 1; } }
+.faculty { display: grid; gap: 8px; margin: 0 0 14px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.faculty li { display: flex; flex-direction: column; }
+.faculty-title { font-size: .88rem; color: var(--muted); }
+.card .faculty { padding-left: 0; }
