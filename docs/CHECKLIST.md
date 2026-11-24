@@ -13,6 +13,9 @@
 - [ ] **Contact Person**：氏名・所属 → `people.yml` `roles`
 - [ ] **連絡方法**：tRES 用のメールアドレス（チーム共用推奨、`[at]` 表記）→ `people.yml` `contact`
 - [ ] **メンバー名簿**（3チーム分、表記は英語、学年/役職、担当）→ `people.yml` `rosters`
+  - [x] eR@sers：22名（erasers.jp/members の「2027 nuremberg」リスト、2026-11-24 反映）
+  - [ ] SOBITS
+  - [ ] Re@dy
   - [ ] 他チームとの重複メンバーの扱い（会議方針：外部チームの正式メンバーは tRES の名簿に入れない）
   - [ ] 掲載の同意（氏名・写真）
 - [x] **ロボットの写真**（G1、HSR 各1枚。eR@sers サイトの写真を使用、2026-11-22 追加）→ `robots.yml` `media`

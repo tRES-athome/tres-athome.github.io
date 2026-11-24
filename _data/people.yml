@@ -33,7 +33,30 @@ rosters:
     members: []
     members_page: ""
   - team: erasers
-    members: []
+    # Source: https://erasers.jp/members/ ("2027 nuremberg" list, checked 2026-11-24)
+    members:
+      - name: "Tetsunari Inamura"
+      - name: "Yoshiaki Mizuchi"
+      - name: "Junji Nishino"
+      - name: "Sansei Hori"
+      - name: "Arata Sakamaki"
+      - name: "Gai Nakatogawa"
+      - name: "Ryosuke Noto"
+      - name: "Hiroya Shimbayashi"
+      - name: "Ato Matsui"
+      - name: "Ryo Sakaya"
+      - name: "Yuri Nakakita"
+      - name: "Shunta Kawashima"
+      - name: "Kouta Ozawa"
+      - name: "Tomohiro Uchiyama"
+      - name: "Shunichi Shibata"
+      - name: "Fuki Oishi"
+      - name: "Yuta Suruki"
+      - name: "Haruma Sato"
+      - name: "Mizuki Takeuchi"
+      - name: "Yuka Dazai"
+      - name: "Tokina Sato"
+      - name: "Kazuma Kanechika"
     members_page: "https://erasers.jp/members/"
   - team: sobits
     members: []
